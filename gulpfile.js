@@ -42,3 +42,11 @@ gulp.task('push', function () {
     console.log(stdout);
   });
 });
+
+gulp.task('watcher', function () {
+  //sass
+  //jade
+});
+
+
+gulp.task('default', ['watcher']);
