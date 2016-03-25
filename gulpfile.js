@@ -37,5 +37,5 @@ gulp.task('watch',function() {
 
 });
 
-//defaultt
+//default task
 gulp.task('default', ['jade', 'sass','watch']);
