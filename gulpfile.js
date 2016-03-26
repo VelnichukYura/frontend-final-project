@@ -42,3 +42,30 @@ gulp.task('watch',function() {
 });
 //default task
 gulp.task('default', ['connect','watch']);
+
+//git commit
+gulp.task('commit', function () {
+    git.exec({args: 'add -A'}, function (err, stdout) {
+        git.exec({args: 'diff --name-status --cached --raw'}, function (err, stdout) {
+            var message = stdout.replace(/\t/g, " - ").replace(/\n/g, ";\n");
+            git.exec({args: 'commit -m "' + message + '"'}, function (err, stdout) {
+                console.log(err);
+                console.log(stdout);
+            });
+        });
+    });
+});
+
+gulp.task('pull', function () {
+    git.exec({args: 'pull'}, function (err, stdout) {
+        console.log(err);
+        console.log(stdout);
+    });
+});
+
+gulp.task('push', function () {
+    git.exec({args: 'push'}, function (err, stdout) {
+        console.log(err);
+        console.log(stdout);
+    });
+});
