@@ -1,66 +1,56 @@
-//@import '_reset';
-//@import "_breakpoints";
-//@import "_colors";
-//@import "_headings";
-
-$border-color: #000000;
-
 body {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
+
 .clearfix {
-  clear: both;
-}
+  clear: both; }
 
 .top-section {
   width: 100%;
   padding: 10px;
-  background-color: $border-color;
+  background-color: #000000;
   font-family: Arial, sans-serif;
-  color:  white;
+  color: white;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: -0.055px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+
 .custom-care {
   float: left;
-  margin-left: 100px;
-}
-.option-div{
+  margin-left: 100px; }
+
+.option-div {
   float: right;
-  margin-right: 100px;
-}
+  margin-right: 100px; }
+
 .option-div .search, .option-div .my_account {
   border-right: 1px solid #444444;
-  padding: 10px;
-}
+  padding: 10px; }
+
 .option-div .my_account a {
   text-decoration: none;
-  color: white;
-}
+  color: white; }
+
 .option-div .my_account a img {
-  margin-right: 5px;
-}
+  margin-right: 5px; }
+
 .option-div select {
-  background-color: $border-color;
+  background-color: #000000;
   color: white;
   border-right: 1px solid #444444;
   border-left: 1px solid #444444;
   padding: 0 10px;
   border-top: none;
   border-bottom: none;
-  overflow: hidden;
-}
+  overflow: hidden; }
+
 @media screen and (max-width: 760px) {
   .custom-care {
-    margin-left: 20px;
-  }
+    margin-left: 20px; }
   .option-div {
-    margin-right: 20px;
-  }
-}
+    margin-right: 20px; } }
+
 @media screen and (max-width: 320px) {
   .custom-care {
     float: none;
@@ -71,8 +61,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     letter-spacing: -0.15px;
-    text-align: center;
-  }
+    text-align: center; }
   .option-div {
     float: none;
     margin: 0;
@@ -81,20 +70,14 @@ body {
     padding: 10px;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    font-weight: 400;
-  }
+    font-weight: 400; }
   .top-section {
     width: auto;
     padding: 0;
-    background-color: white;
-  }
+    background-color: white; }
   .option-div select {
-    border-left: none;
-  }
+    border-left: none; }
   .option-div .my_account {
-    padding: 0 30px;
-  }
+    padding: 0 30px; }
   .option-div .search {
-    border-right: none;
-  }
-}
+    border-right: none; } }
