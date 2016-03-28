@@ -1,13 +1,11 @@
-/**
- * Created by wwws- on 25.03.2016.
- */
 'use strict';
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     connect = require('gulp-connect'),
     opn = require('opn'),
-    jade = require('gulp-jade');
+    jade = require('gulp-jade'),
+    git = require('gulp-git');
 //conect
 gulp.task('connect', function() {
     connect.server({
