@@ -12,6 +12,8 @@
     "gulp": "^3.9.1",
     "gulp-git": "^1.7.0",
     "gulp-jade": "^1.1.0",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "jquery": "^2.2.2"
   }
 }

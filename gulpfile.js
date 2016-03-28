@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var git = require('gulp-git');
+var watch = require('gulp-watch');
 
 gulp.task('sass', function () {
   return gulp.src("src/scss/style.scss")
@@ -43,10 +44,10 @@ gulp.task('push', function () {
   });
 });
 
-gulp.task('watcher', function () {
-  //sass
-  //jade
+gulp.task('watch', function () {
+  gulp.watch('src/**/*.scss', ['sass']);
+  gulp.watch('src/**/*.jade', ['jade']);
 });
 
 
-gulp.task('default', ['watcher']);
+
