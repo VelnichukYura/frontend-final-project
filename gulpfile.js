@@ -2,57 +2,40 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var git = require('gulp-git');
+var browserSync = require('browser-sync').create();
+
 
 // SASS TASK
-gulp.task('sass', function () {
-    return gulp.src("src/scss/style.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("dist/css"));
+gulp.task('sass', function(){
+  return.gulp.src('src/scss/style.scss')
+      .pipe(sass())
+      .pipe(gulp.dest('app/css'))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
 });
+
 
 // JADE TASK
 gulp.task('jade', function () {
-    gulp.src('./src/jade/*.jade')
-        .pipe(jade({
-            pretty: true
-        }))
-        .pipe(gulp.dest('./dist/'));
+ return. gulp.src('./src/jade/*.jade')
+      .pipe(jade({
+        pretty: true
+      }))
+      .pipe(gulp.dest('./dist/'));
 });
 
-// GIT COMMIT TASK
-gulp.task('commit', function () {
-    git.exec({args: 'add -A'}, function (err, stdout) {
-        git.exec({args: 'diff --name-status --cached --raw'}, function (err, stdout) {
-            var message = stdout.replace(/\t/g, " - ").replace(/\n/g, ";\n");
-            git.exec({args: 'commit -m "' + message + '"'}, function (err, stdout) {
-                console.log(err);
-                console.log(stdout);
-            });
-        });
-    });
+//BROWSER-SYNC TASK
+gulp.task('browserSync', function(){
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+  })
 });
 
-// GIT PULL TASK
-gulp.task('pull', function () {
-    git.exec({args: 'pull'}, function (err, stdout) {
-        console.log(err);
-        console.log(stdout);
-    });
+gulp.task('watch', ['browserSync', 'sass'], function(){
+  gulp.watch('src/scss/**/*.scss', ['sass']);
+  gulp.watch('src/jade/**/*.jade'), ['jade']);
+  gulp.watch('dist/*.html', browserSync.reload);
 });
-
-// GIT PUSH TASK
-gulp.task('push', function () {
-    git.exec({args: 'push'}, function (err, stdout) {
-        console.log(err);
-        console.log(stdout);
-    });
-});
-
-
-gulp.task('watcher', function () {
-    //sass
-    //jade
-});
-
-
-gulp.task('default', ['watcher']);
