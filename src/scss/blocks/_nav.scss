@@ -1,11 +1,13 @@
 .nav-section {
   background-color: white;
   height: 100px;
+
   #site-logo {
     position: relative;
     float: left;
     top: 42px;
   }
+
   nav {
     position: relative;
     float: right;
@@ -17,10 +19,12 @@
       padding: 0 0 0 15px;
     }
   }
+
   .cart-container {
     position: relative;
     float: right;
     top: 17px;
+
     .cart-container-info {
       width: 214px;
       height: 33px;
@@ -28,7 +32,8 @@
       background: none;
       box-sizing: border-box;
     }
-    .cart-container-figures{
+
+    .cart-container-figures {
       @extend .cart-container-info;
     }
   }
