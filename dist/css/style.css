@@ -12,6 +12,12 @@ main .main-width {
   width: 1000px;
   margin: 0 auto; }
 
+main .triangle-down {
+  display: inline-block;
+  background: url("/images/triangle-down.png") no-repeat center center;
+  width: 7px;
+  height: 4px; }
+
 .account-section {
   background-color: #000000;
   height: 30px;
@@ -90,3 +96,67 @@ main .main-width {
           border-bottom: 1px solid #444444;
           cursor: text;
           z-index: 500; }
+
+header {
+  height: 100px; }
+  header .logo {
+    height: 100px;
+    display: inline-block;
+    vertical-align: top; }
+    header .logo a {
+      display: block;
+      height: 100px;
+      line-height: 115px;
+      width: 200px; }
+  header nav {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 100px;
+    margin-left: 160px; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        float: left; }
+        header nav ul li + li {
+          margin-left: 30px; }
+        header nav ul li a {
+          font-family: Arial;
+          color: #000000;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: -0.08px;
+          text-decoration: none; }
+  header .cart {
+    float: right;
+    border: 1px solid #d6d6d6;
+    width: 214px;
+    position: relative;
+    top: 16px; }
+    header .cart > div {
+      height: 33px;
+      line-height: 33px; }
+      header .cart > div + div {
+        border-top: 1px solid #d6d6d6; }
+    header .cart .cart-header {
+      font-family: Arial;
+      color: #949393;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px;
+      text-align: left;
+      text-indent: 10px; }
+      header .cart .cart-header span {
+        float: right;
+        position: relative;
+        top: 14px;
+        right: 12px; }
+    header .cart .cart-total {
+      background: url("/images/cart.png") no-repeat 10px center;
+      text-align: right; }
+      header .cart .cart-total span {
+        margin-right: 10px;
+        font-family: Arial;
+        color: #949393;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: -0.055px; }
