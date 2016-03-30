@@ -5,96 +5,230 @@
 
 $border-color: #000000;
 
-body {
+* {
   padding: 0;
   margin: 0;
 }
 .clearfix {
   clear: both;
 }
+main {
+  .full-width {
+  width: 100%;
+ }
+  .main-width {
+  width: 1000px;
+  margin: 0 auto;
+ }
+}
 
 .top-section {
-  width: 100%;
-  padding: 10px;
   background-color: $border-color;
-  font-family: Arial, sans-serif;
+  height: 30px;
+  line-height: 30px;
   color:  white;
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: -0.055px;
-  text-transform: uppercase;
-}
-.custom-care {
+  .custom-care {
   float: left;
-  margin-left: 100px;
-}
-.option-div{
+  width: 45%;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.06px;
+  text-transform: uppercase;
+  text-align: left;
+  span {
+      font-size: 11px;
+      margin-right: 4px;
+    }
+  }
+  .option-div{
   float: right;
-  margin-right: 100px;
+  width: 45%;
+  .search {
+      position: relative;
+      float: right;
+      border-left: 1px solid #444444;
+      border-right: 1px solid #444444;
+      width: 35px;
+      height: 30px;
+      input {
+        background: url("/images/searching_glass.png") no-repeat 50% center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 30px;
+        border: none;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        &:focus {
+          background: white;
+          width: 237px;
+          border-bottom: 1px solid #444444;
+          cursor: text;
+          z-index: 500;
+          //height: 29px;
+          box-shadow: none;
+        }
+      }
+    }
+    .my_account {
+    height: 30px;
+    float: right;
+    border-left: 1px solid #444444;
+    background: url("/images/Contact_User.png") no-repeat;
+    background-position:  15px center;
+    width: 100px;
+    padding-left: 40px;
+    line-height: 29px;
+    a {
+      font-size: 11px;
+      font-weight: 400;
+      font-family: Arial;
+      letter-spacing: -0.055px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+    }
+  }
+    .currency-change {
+      float: right;
+      height: 30px;
+      width: 60px;
+      text-align: center;
+      border-left: 1px solid #444444;
+      select {
+        border: none;
+        background: none;
+        color: #ffffff;
+        cursor: pointer;
+        position: relative;
+        background: black;
+        option {
+          border: none;
+          background: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
 }
-.option-div .search, .option-div .my_account {
-  border-right: 1px solid #444444;
-  padding: 10px;
+.purchase-section {
+  height: 90px;
+  line-height: 90px;
+  .logo {
+    float: left;
+    img {
+      vertical-align: middle;
+    }
+  }
+  .departments {
+    float: right;
+    ul {
+      list-style: none;
+      li{
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 25px;
+        font-family: Arial;
+        color:  #000000;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.08px;
+        img {
+          margin-left: 3px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .cart-table {
+    float: right;
+    vertical-align: middle;
+    margin-top: 23px;
+    .your-cart {
+      width: 214px;
+      height: 33px;
+      border: 1px solid #d6d6d6;
+      border-bottom: none;
+      background: url("../images/select-triangle-grey.png") no-repeat 95% center;
+      line-height: 33px;
+      cursor: pointer;
+      a {
+        font-family: Arial;
+        color:  #949393;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.06px;
+        text-align: left;
+        margin-left: 4px;
+        text-decoration: none;
+      }
+    }
+    .cart-bag {
+      width: 214px;
+      height: 33px;
+      border: 1px solid #d6d6d6;
+      background:  #fafafa;
+      line-height: 33px;
+      span {
+        display: inline-block;
+        width: 210px;
+        font-family: Arial;
+        color:  #949393;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: -0.06px;
+        padding-right: 4px;
+        text-align: right;
+       background: url("/images/cart-bag.png") no-repeat 5% center;
+      }
+    }
+  }
 }
-.option-div .my_account a {
-  text-decoration: none;
-  color: white;
-}
-.option-div .my_account a img {
-  margin-right: 5px;
-}
-.option-div select {
-  background-color: $border-color;
-  color: white;
-  border-right: 1px solid #444444;
-  border-left: 1px solid #444444;
-  padding: 0 10px;
-  border-top: none;
-  border-bottom: none;
-  overflow: hidden;
-}
-@media screen and (max-width: 760px) {
-  .custom-care {
-    margin-left: 20px;
-  }
-  .option-div {
-    margin-right: 20px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .custom-care {
-    float: none;
-    margin: 10px auto;
-    width: 100%;
-    color: #838383;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: -0.15px;
-    text-align: center;
-  }
-  .option-div {
-    float: none;
-    margin: 0;
-    width: 100%;
-    background-color: black;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-  }
-  .top-section {
-    width: auto;
-    padding: 0;
-    background-color: white;
-  }
-  .option-div select {
-    border-left: none;
-  }
-  .option-div .my_account {
-    padding: 0 30px;
-  }
-  .option-div .search {
-    border-right: none;
-  }
-}
+
+//@media screen and (max-width: 760px) {
+//  .custom-care {
+//    margin-left: 20px;
+//  }
+//  .option-div {
+//    margin-right: 20px;
+//  }
+//}
+//@media screen and (max-width: 320px) {
+//  .custom-care {
+//    float: none;
+//    margin: 10px auto;
+//    width: 100%;
+//    color: #838383;
+//    font-family: Arial, sans-serif;
+//    font-size: 15px;
+//    font-weight: 400;
+//    letter-spacing: -0.15px;
+//    text-align: center;
+//  }
+//  .option-div {
+//    float: none;
+//    margin: 0;
+//    width: 100%;
+//    background-color: black;
+//    padding: 10px;
+//    font-family: Arial, sans-serif;
+//    font-size: 15px;
+//    font-weight: 400;
+//  }
+//  .top-section {
+//    width: auto;
+//    padding: 0;
+//    background-color: white;
+//  }
+//  .option-div select {
+//    border-left: none;
+//  }
+//  .option-div .my_account {
+//    padding: 0 30px;
+//  }
+//  .option-div .search {
+//    border-right: none;
+//  }
+//}

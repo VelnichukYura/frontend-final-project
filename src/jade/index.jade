@@ -1,22 +1,45 @@
-doctype html
-html
-  head
-    title Lookshop
-    link(href="../dist/css/style.css" rel="styleSheet")
-  body
-    section.top-section
-      .custom-care custom care: 888-23-4567
-      .option-div
-        select
-          option &#36; US
-          option &euro; EURO
-          option &#163; GBP
-          option &#165; CHY
-        span.my_account
-          a(href="#" target="_blank")
-            img(src="../dist/images/Contact_User.png")
-            | my account
-        a.search(href="#")
-          img(src="../dist/images/searching_glass.png")
-      .clearfix
+extends ./layouts/main.jade
+block content
+  main
+    section.top-section.full-width
+      div.main-width
+        div.custom-care
+          span custom care:
+          | 888-23-4567
+        div.option-div
+          div.search
+            input(type="text")
+          div.my_account
+              a(href="#" target="_blank") my account
+          div.currency-change
+            select
+              option &#36; US
+              option &euro; EURO
+              option &#163; GBP
+              option &#165; CHY
+    .clearfix
+    section.full-width.purchase-section
+      div.main-width
+        div.logo
+          img(src="./images/logo.png" alt="Logo")
+        div.cart-table
+          div.your-cart
+            a(href="#") Your cart
+          div.cart-bag
 
+            span
+              //img(src="./images/cart-bag.png")
+              |0 items | $ 0
+        div.departments
+          ul
+            li new
+              img(src="./images/select_triangle.png")
+            li designers
+              img(src="./images/select_triangle.png")
+            li women
+              img(src="./images/select_triangle.png")
+            li men
+              img(src="./images/select_triangle.png")
+            li clearence
+              img(src="./images/select_triangle.png")
+    .clearfix
