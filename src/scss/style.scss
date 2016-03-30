@@ -2,11 +2,6 @@
 @import "_breakpoints";
 @import "_colors";
 @import "_headings";
-.title{
-  color: #ffffff;
-  font-family: Calibri,Arial,sans-serif;
-
-
-
-
-}
+@import "account";
+@import "main";
+@import "header";

@@ -1,0 +1,39 @@
+.header-section{
+  height: 85px;
+}.logo{
+   width:200px;
+   margin-top: 50px;
+ }
+.nav-menu{
+  width:37%;
+  margin: -40px auto;
+  li{
+    float: left;
+    list-style: none;
+    padding:10px;
+    a{
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+  }
+}.my-purchases{
+  width:300px;
+  float: right;
+  form{
+    margin:-18px 0 0 47px;
+  .fa-shopping-basket{
+    text-align: right;
+    background: url("/images/basket.png") left  no-repeat;
+  }
+  }
+  input{
+    display:block;
+    width: 234px;
+    height: 30px;
+    padding-left: 10px;
+  }
+
+ }
+
+

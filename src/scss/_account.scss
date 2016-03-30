@@ -1,0 +1,119 @@
+$color: #000;
+$white: #fff;
+
+.account-section {
+  background-color:  $color;
+  height: 30px;
+  line-height: 30px;
+  color:  white;
+  .account-left {
+    text-transform: uppercase;
+    float: left;
+    width: 45%;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.06px;
+    text-align: left;
+    span {
+      font-size: 11px;
+      margin-right: 4px;
+    }
+  }
+  .account-right {
+    float: right;
+    width: 45%;
+    .currency-switcher {
+      float: right;
+      height: 29px;
+      font-size: 12px;
+      width: 70px;
+      text-align: center;
+      border-left: 1px solid #444444;
+      .menu{
+        list-style: none;
+        position: relative;
+        a{
+          display: block;
+          color: #ffffff;
+          text-decoration: none;
+
+          transition: 0.5s all;
+          &:hover{
+            background: #2e2e2e;
+          }
+
+        }
+        .list_menu:hover .menu_drop{
+          display: block;
+        }
+
+        .menu_drop{
+          display: none;
+          background: $color;
+          position: absolute;
+          width: 100%;
+          top: 100%;
+          z-index: 400;
+        }
+      }
+
+      }
+    }
+
+    .account-page-link {
+      float: right;
+      height: 30px;
+      border-left: 1px solid #444444;
+      background: url("/images/user.png") 15px center no-repeat;
+      width: 100px;
+      padding-left: 40px;
+      line-height: 29px;
+      a {
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: -0.055px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+      }
+    }
+    .search {
+      position: relative;
+      float: right;
+      border-left: 1px solid #444444;
+      border-right: 1px solid #444444;
+      width: 35px;
+      height: 30px;
+      input {
+        position: absolute;
+        width: 35px;
+        height: 29px;
+        top:0;
+        right: 0;
+        border:none;
+        background: url("/images/shnape.png") 50% center no-repeat;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        &:focus {
+          background: white;
+          width: 237px;
+          border: 1px solid #000;
+          cursor: text;
+          z-index: 500;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

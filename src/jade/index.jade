@@ -1,3 +1,57 @@
-extends ./layouts/main.jade
-block content
-  h1 Hello world
+//
+   Created by wwws- on 25.03.2016.
+doctype html
+html
+    head
+        title new site
+        meta(charset='utf=8')
+        link(href="css/style.css" rel="stylesheet")
+        link(rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css")
+
+body
+    main
+        section.full-width.account-section
+            div.main-width
+                div.account-left
+                    span custom care:
+                    | 888-23-4567
+                div.account-right
+                    div.search
+                        input(type='text')
+                    div.account-page-link
+                        a(href='#') my account
+                    div.currency-switcher
+                        ul.menu
+                            li.list_menu: a(href="#") $ US
+                              ul.menu_drop
+                                li: a(href="#") $ EU
+                                li: a(href="#") $ GR
+                                li: a(href="#") $ RU
+        section.full-width.header-section
+            header.header-width
+                div.logo
+                    a(href="index.html")
+                        img(src="/images/logo.png")
+                div.nav-menu
+                    ul
+                        li: a(href="#") new
+                        li: a(href="#") designers
+                        li: a(href="#") women
+                        li: a(href="#") men
+                        li: a(href="#") clearence
+                div.my-purchases
+                    form
+                        label
+                            input(type="text" placeholder="Your cart")
+                            input.fa.fa-shopping-basket(type="text" name="basket" placeholder="0 items  |  $ 0")
+
+        div.clearfix
+
+
+
+
+
+
+
+
+
