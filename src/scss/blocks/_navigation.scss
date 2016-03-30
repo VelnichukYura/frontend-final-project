@@ -8,9 +8,11 @@
   }
   .menu-dropdown {
     margin-left: 306px;
-    margin-top: 37px;
+    margin-top: 30px;
     position: absolute;
-    a {
+    select {
+      background: inherit;
+      border: none;
       padding: 10px 2px 10px 10px;
       text-decoration: none;
       font-family: Arial;
