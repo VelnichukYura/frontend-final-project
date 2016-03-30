@@ -1,4 +1,5 @@
 .idea
+psd
 node_modules
 dist/libraries
 npm-debug.log

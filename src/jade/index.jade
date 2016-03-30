@@ -1,13 +1,40 @@
-//extends ./layouts/main.jade
-//block content
-    h1 Hello world
-
-doctype html
-html(lang="en")
-  head
-    title= Final Project
-  body
-    .wrapper
-      .nav
-        .nav_part1
-        .nav_part2
+extends ./layouts/main.jade
+block content
+  main
+    section.full-width.account-section
+      div.main-width
+        div.account-left
+          span custom care:
+          |  557-23-4555
+        div.account-right
+          div.search
+            input(type='text')
+          div.account-page-link
+            div.account-icon
+            img(src='images/account-icon.png')
+            a(href='#') my account
+          div.currency-switcher
+            select
+              option $ US
+              option € EUR
+              option £ GBP
+      div.clearfix
+    section.nav-section
+      div.main-width
+        a#site-logo(href='#')
+          img(src='images/site-logo.png')
+        div.cart-container
+          div.cart-container-info
+          div.cart-container-figures
+        nav
+          select
+            option new
+          select
+            option designers
+          select
+            option women
+          select
+            option men
+          select
+            option clearence
+      div.clearfix
