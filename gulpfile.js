@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var git = require('gulp-git');
+var watch = require('gulp-watch');
 
 // SASS TASK
 gulp.task('sass', function () {

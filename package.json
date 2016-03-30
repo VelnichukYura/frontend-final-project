@@ -13,5 +13,8 @@
     "gulp-git": "^1.7.0",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp-watch": "^4.3.5"
   }
 }
