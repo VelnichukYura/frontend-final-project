@@ -1,20 +1,19 @@
-doctype html
-html(lang='en')
-    head
-        meta(charset='UTF-8')
-        title Final Project
-        link(rel='stylesheet', href='css/style.css')
-    body
-        #navigation
-            .info
-                | custom care: 888-23-4567
-            .buttons
-                select#currency.inline
-                    option $US
-                    option EURO
-                    option UAH
-                button.inline.my-account
-                    img(src='images/user.png', alt='')
-                    |  my account
-                button.inline.search
-                    img(src='images/Shape.png', alt='no img', align='center')
+extends ./layouts/main.jade
+block content
+    main
+        section.full-width.account-section
+            div.main-width
+                div.account-left
+                    span custom care:
+                    | 888-23-4567
+                div.account-right
+                    div.search
+                        input(type='text')
+                    div.account-page-link
+                        a(href='#') my account
+                    div.currency-switcher
+                        select
+                            option $ US
+                            option EURO
+                            option UAH
+        div.clearfix

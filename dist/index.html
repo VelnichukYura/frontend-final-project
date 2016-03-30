@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Final Project</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>My site</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div id="navigation">
-      <div class="info">custom care: 888-23-4567</div>
-      <div class="buttons">
-        <select id="currency" class="inline">
-          <option>$US</option>
-          <option>EURO</option>
-          <option>UAH</option>
-        </select>
-        <button class="inline my-account"><img src="images/user.png" alt=""> my account</button>
-        <button class="inline search"><img src="images/Shape.png" alt="no img" align="center"></button>
-      </div>
-    </div>
+    <main>
+      <section class="full-width account-section">
+        <div class="main-width">
+          <div class="account-left"><span>custom care:</span>888-23-4567</div>
+          <div class="account-right">
+            <div class="search">
+              <input type="text">
+            </div>
+            <div class="account-page-link"><a href="#">my account</a></div>
+            <div class="currency-switcher">
+              <select>
+                <option>$ US</option>
+                <option>EURO</option>
+                <option>UAH</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+    </main>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
   </body>
 </html>
