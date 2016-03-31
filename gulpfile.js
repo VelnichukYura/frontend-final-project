@@ -1,29 +1,31 @@
-'use strict';
-
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
+var gulp =    require('gulp'),
+    sass =    require('gulp-sass'),
     connect = require('gulp-connect'),
-    opn = require('opn'),
-    jade = require('gulp-jade'),
-    git = require('gulp-git');
-//conect
+    jade =    require('gulp-jade');
+
 gulp.task('connect', function() {
     connect.server({
-        root: 'src',
+        root: 'dist',
         livereload: true,
-        port:8888
+        port: 8888
     });
-    opn('http://localhost:8888')
 });
+//html
+gulp.task('html', function () {
+    return gulp.src('dist/*.html')
+        .pipe(connect.reload())
+
+});
+
 //jade
 gulp.task('jade', function() {
     var YOUR_LOCALS = {};
 
-    gulp.src('src/jade/*.jade')
+    gulp.src('./src/jade/*.jade')
         .pipe(jade({
             locals: YOUR_LOCALS
         }))
-        .pipe(connect.reload())
+
         .pipe(gulp.dest('./dist/'))
 });
 //sass
@@ -35,8 +37,9 @@ gulp.task('sass', function () {
 });
 //watch
 gulp.task('watch',function() {
-    gulp.watch('src/jade/*.jade', ['jade'])
-    gulp.watch('src/scss/style.scss', ['sass'])
+    gulp.watch('./src/jade/*.jade', ['jade'])
+    gulp.watch('dist/*.html', ['html'])
+    gulp.watch('src/scss/*.scss', ['sass'])
 });
 //default task
 gulp.task('default', ['connect','watch']);

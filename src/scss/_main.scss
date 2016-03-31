@@ -23,4 +23,10 @@ main {
     position: relative;
 
   }
+  .triangle-down{
+    background: url("/images/triangle-down.png") no-repeat center center;
+    width: 7px;
+    height: 4px;
+    display: inline-block;
+  }
 }

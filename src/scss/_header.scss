@@ -17,23 +17,47 @@
       font-weight: bold;
     }
   }
-}.my-purchases{
-  width:300px;
+}
+.left{
   float: right;
-  form{
-    margin:-18px 0 0 47px;
-  .fa-shopping-basket{
+  height:67px;
+  width:214px;
+  border: 1px solid #E0E0E0;
+  position: relative;
+  bottom: 14px;
+
+  .cart{
+    height: 33px;
+    border-bottom: 1px solid #E0E0E0;
+    color:  #949393;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.06px;
+    text-align: left;
+    line-height: 33px;
+    text-indent: 10px;
+    span{
+      float: right;
+      position: relative;
+      right: 10px;
+      top:14px;
+    }
+  }
+  .basket{
+    background: url("/images/basket.png") no-repeat 10px;
     text-align: right;
-    background: url("/images/basket.png") left  no-repeat;
-  }
-  }
-  input{
-    display:block;
-    width: 234px;
-    height: 30px;
-    padding-left: 10px;
+    span{
+      color:  #949393;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: -0.055px;
+      line-height: 33px;
+      margin-right: 10px;
+
+    }
+
   }
 
- }
+}
 
 

@@ -36,17 +36,17 @@ $white: #fff;
           display: block;
           color: #ffffff;
           text-decoration: none;
-
-          transition: 0.5s all;
+          transition: 0.7s all;
           &:hover{
-            background: #2e2e2e;
+            background: #888;
           }
-
         }
         .list_menu:hover .menu_drop{
           display: block;
         }
-
+        .down{
+          background: url("/images/triangle-down.png") no-repeat 55px center ;
+        }
         .menu_drop{
           display: none;
           background: $color;
@@ -87,7 +87,7 @@ $white: #fff;
       input {
         position: absolute;
         width: 35px;
-        height: 29px;
+        height: 27px;
         top:0;
         right: 0;
         border:none;
@@ -96,7 +96,7 @@ $white: #fff;
         cursor: pointer;
         &:focus {
           background: white;
-          width: 237px;
+          width: 244px;
           border: 1px solid #000;
           cursor: text;
           z-index: 500;

@@ -6,7 +6,7 @@ html
         title new site
         meta(charset='utf=8')
         link(href="css/style.css" rel="stylesheet")
-        link(rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css")
+
 
 body
     main
@@ -22,11 +22,14 @@ body
                         a(href='#') my account
                     div.currency-switcher
                         ul.menu
-                            li.list_menu: a(href="#") $ US
+                            li.list_menu: a.down(href="#") $ US
+
+
                               ul.menu_drop
                                 li: a(href="#") $ EU
                                 li: a(href="#") $ GR
                                 li: a(href="#") $ RU
+        div.clearfix
         section.full-width.header-section
             header.header-width
                 div.logo
@@ -40,12 +43,18 @@ body
                         li: a(href="#") men
                         li: a(href="#") clearence
                 div.my-purchases
-                    form
-                        label
-                            input(type="text" placeholder="Your cart")
-                            input.fa.fa-shopping-basket(type="text" name="basket" placeholder="0 items  |  $ 0")
-
+                    div.block.left
+                        div.block.cart
+                            | Your cart
+                            span.triangle-down
+                        div.basket
+                            span items  |  $ 0
         div.clearfix
+        section.full-width.slide-section
+          div.slide-width
+
+
+
 
 
 

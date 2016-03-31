@@ -1,12 +1,12 @@
 {
-  "name": "final-project",
-  "description": "",
-  "main": "index.js",
+  "name": "my-project-ws",
   "authors": [
-    "Dmytro Baranetskyi <ckopnio@gmail.com>"
+    "Alex Savchuk <alexsavchuk739291@gmail.com>"
   ],
-  "license": "ISC",
+  "description": "",
+  "main": "",
   "moduleType": [],
+  "license": "MIT",
   "homepage": "",
   "ignore": [
     "**/.*",
@@ -16,7 +16,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "jcarousel": "^0.3.4"
+  "devDependencies": {
+    "jquery": "^2.2.2"
   }
 }
