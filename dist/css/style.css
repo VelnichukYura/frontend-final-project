@@ -91,60 +91,64 @@ main .main-width {
           cursor: text;
           z-index: 500; }
 
-.nav-section {
-  height: 90px;
-  position: relative; }
-  .nav-section .logo-left {
-    float: left;
-    margin-top: 30px;
-    position: absolute; }
-  .nav-section .menu-dropdown {
-    margin-left: 306px;
-    margin-top: 30px;
-    position: absolute; }
-    .nav-section .menu-dropdown select {
-      background: inherit;
-      border: none;
-      padding: 10px 2px 10px 10px;
-      text-decoration: none;
+header {
+  height: 100px; }
+  header .logo {
+    height: 100px;
+    display: inline-block;
+    vertical-align: top; }
+    header .logo a {
+      display: block;
+      height: 100px;
+      line-height: 115px;
+      width: 200px; }
+  header nav {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 100px;
+    margin-left: 160px; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        float: left; }
+        header nav ul li + li {
+          margin-left: 30px; }
+        header nav ul li a {
+          font-family: Arial;
+          color: #000000;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: -0.08px;
+          text-decoration: none; }
+  header .cart {
+    float: right;
+    border: 1px solid #d6d6d6;
+    width: 214px;
+    position: relative;
+    top: 16px; }
+    header .cart > div {
+      height: 33px;
+      line-height: 33px; }
+      header .cart > div + div {
+        border-top: 1px solid #d6d6d6; }
+    header .cart .cart-header {
       font-family: Arial;
-      color: black;
-      font-size: 16px;
+      color: #949393;
+      font-size: 12px;
       font-weight: 400;
-      letter-spacing: -0.08px; }
-    .nav-section .menu-dropdown img {
-      vertical-align: middle;
-      margin-right: 23px; }
-  .nav-section .your_cart {
-    position: absolute;
-    margin-left: 768px;
-    margin-top: 15px; }
-    .nav-section .your_cart .cart1 {
-      height: 29px;
-      width: 230px;
-      background: url("../images/arrow_down2.png") no-repeat;
-      background-position: center right 10px;
-      border: 1px solid #d6d6d6; }
-      .nav-section .your_cart .cart1 span {
-        float: left;
-        line-height: 30px;
-        padding-left: 10px;
-        font-family: Arial;
-        color: #949393;
-        font-size: 11px;
-        font-weight: 400;
-        letter-spacing: -0.055px; }
-    .nav-section .your_cart .cart2 {
-      height: 30px;
-      width: 230px;
-      background: url("../images/cart2.png") no-repeat;
-      background-position: 10px center;
-      border: 1px solid #d6d6d6;
-      border-top: none; }
-      .nav-section .your_cart .cart2 span {
+      letter-spacing: -0.06px;
+      text-align: left;
+      text-indent: 10px; }
+      header .cart .cart-header span {
         float: right;
-        line-height: 30px;
-        padding-right: 10px;
+        position: relative;
+        top: 14px;
+        right: 12px; }
+    header .cart .cart-total {
+      background: url("/images/cart.png") no-repeat 10px center;
+      text-align: right; }
+      header .cart .cart-total span {
+        margin-right: 10px;
         font-family: Arial;
         color: #949393;
         font-size: 11px;
