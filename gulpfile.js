@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var git = require('gulp-git');
+var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function () {
   return gulp.src("src/scss/style.scss")
@@ -44,10 +45,17 @@ gulp.task('push', function () {
 });
 
 gulp.task('watcher', function () {
-  gulp.watch('scss/*.scss)',['sass'])
-  gulp.watch('jade/*.jade)',['jade'])
   //sass
   //jade
+});
+
+// Static Server + watching scss/jade files
+gulp.task('serve', ['sass', 'jade'], function () {
+
+    browserSync.init({
+        server: "./dist"
+    });
+
 });
 
 

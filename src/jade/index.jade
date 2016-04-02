@@ -1,3 +1,44 @@
 extends ./layouts/main.jade
 block content
-  h1 Hello world
+  main
+    section.full-width.account-section
+      div.main-width
+        div.account-left
+          span custom care:
+          | 888-23-4567
+        div.account-right
+          div.search
+            input(type='text')
+          div.account-page-link
+            a(href='#') my account
+          div.currency-switcher
+            select
+              option $ US
+              option $ US
+              option $ US
+    div.clearfix
+    section.full-width.header-section
+      header.main-width
+        div.logo
+          a(href='/')
+            img(src='images/logo.png')
+        nav.main-menu
+          ul
+            li
+              a(href='#') new
+            li
+              a(href='#') designers
+            li
+              a(href='#') women
+            li
+              a(href='#') men
+            li
+              a(href='#') clearence
+        div.cart
+          div.cart-header
+            | Your cart
+            span.triangle-down
+          div.cart-total
+            span 0 items  |  $ 0
+    div.clearfix
+
