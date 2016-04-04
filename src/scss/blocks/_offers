@@ -1,0 +1,16 @@
+.offers_section {
+  height: 350px;
+  width: 968px;
+  margin: 0 auto;
+  a{
+    position: static;
+  }
+  .left_offers{
+    float: left;
+    width: 50%;
+  }
+  .right_offers{
+    float: right;
+    width: 50%;
+  }
+}

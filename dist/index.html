@@ -3,6 +3,7 @@
   <head>
     <title>My site</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link href="./libraries/bxslider/jquery.bxslider.css" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -44,7 +45,35 @@
         </header>
       </section>
       <div class="clearfix"></div>
+      <section class="full-width">
+        <ul class="bxslider"></ul>
+        <li><img src="./images/img1.png"></li>
+        <li><img src="./images/img1.png"></li>
+        <li><img src="./images/img1.png"></li>
+        <script>$('.bxslider').bxSlider()</script>
+      </section>
+      <div class="clearfix"></div>
+      <section class="full-width email_section">
+        <div class="main-width">
+          <div class="email_left"><span>Stay updated</span>
+            <input type="email" placeholder="Your email adress">
+          </div>
+          <div class="email_right"><span>Find us here</span>
+            <ul>
+              <li><a href="#"><img src="./images/facebook.png"></a></li>
+              <li><a href="#"><img src="./images/twitter.png"></a></li>
+              <li><a href="#"><img src="./images/path.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+      <section class="offers_section">
+        <div class="left_offers"><a href="#"><img src="./images/lr1.png"></a></div>
+        <div class="right_offers"><a href="#"><img src="./images/lr2.png"></a><a href="#"><img src="./images/lr3.png"></a><a href="#"><img src="./images/lr4.png"></a></div>
+      </section>
     </main>
     <script src="./libraries/jquery/dist/jquery.min.js"></script>
+    <script src="./libraries/bxslider/jquery.bxSlider.min.js"></script>
   </body>
 </html>

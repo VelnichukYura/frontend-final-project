@@ -1,0 +1,45 @@
+.email_section {
+  background-color: #EAEAEA;
+  height: 60px;
+  line-height: 60px;
+}
+  .email_left {
+    float: left;
+    width:45%;
+    span {
+      font-family: Arial;
+      color: #6b6b6b;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px;
+    }
+}
+  .email_right {
+    float: right;
+    width: 45%;
+
+    span {
+      margin-left: 240px;
+      font-family: Arial;
+      color:#6c6c6c;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px;
+      float: left;
+    }
+    ul{
+      list-style: none;
+      float: right;
+      display: inline-block;
+    }
+    li {
+      padding-top: 5px;
+      float: left;
+      &+li {
+        margin-left: 30px;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
