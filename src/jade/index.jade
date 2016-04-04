@@ -24,19 +24,39 @@ block content
         div.logo
           a(href='#')
             img(src='images/site-logo.png')
-        div.cart
-          div.cart-info
-          div.cart-figures
         nav
           ul
             li
-              a new
+              a(href='#') new
             li
-              a designers
+              a(href='#') designers
             li
-              a women
+              a(href='#') women
             li
-              a men
+              a(href='#') men
             li
-              a clearence
+              a(href='#') clearence
+        div.cart
+          div.cart-header
+            | Your cart
+            span.triangle-down
+          div.cart-total
+            span 0 items | $ 0
       div.clearfix
+      section.slider
+        div.main-width
+          div.jcarousel
+            ul
+              li
+                a(href='#')
+                  img(src='/images/slider-1.png', width='1000', height='100%', alt='')
+              li
+                a(href='#')
+                  img(src='/images/slider-2.jpg', width='1000', height='100%', alt='')
+            a(href='#', class='jcarousel-control-prev')
+            | L
+            a(href='#', class='jcarousel-control-next')
+            | R
+
+
+          p.jcarousel-pagination

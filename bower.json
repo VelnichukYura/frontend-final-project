@@ -15,5 +15,9 @@
     "./dist/libraries",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.2",
+    "jcarousel": "^0.3.4"
+  }
 }
