@@ -154,3 +154,55 @@ header {
         font-size: 11px;
         font-weight: 400;
         letter-spacing: -0.055px; }
+
+.contacts {
+  background-color: #ededed;
+  height: 55px; }
+  .contacts .form {
+    float: left;
+    line-height: 55px;
+    width: 45%; }
+    .contacts .form .label {
+      font-family: Arial, serif;
+      color: #6b6b6b;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px; }
+    .contacts .form input#e-mail {
+      border: none;
+      height: 28px;
+      width: 132px;
+      margin: 0; }
+    .contacts .form button {
+      width: 28px;
+      height: 28px;
+      border: none;
+      background: #fd926d url("../images/plus.png") no-repeat center center;
+      vertical-align: middle; }
+  .contacts .find-us-here {
+    width: 45%;
+    float: right; }
+    .contacts .find-us-here span {
+      font-family: Arial, serif;
+      color: #6c6c6c;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px;
+      line-height: 55px; }
+    .contacts .find-us-here .social {
+      vertical-align: top;
+      float: right; }
+      .contacts .find-us-here .social ul {
+        list-style: none; }
+        .contacts .find-us-here .social ul li {
+          float: left;
+          width: 55px;
+          height: 55px; }
+          .contacts .find-us-here .social ul li a {
+            text-decoration: none;
+            width: 55px;
+            height: 55px; }
+            .contacts .find-us-here .social ul li a img {
+              vertical-align: middle; }
+        .contacts .find-us-here .social ul li:nth-child(2n+1) {
+          background-color: #f7f7f7; }

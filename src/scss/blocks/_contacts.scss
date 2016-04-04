@@ -1,0 +1,66 @@
+.contacts {
+  background-color:  #ededed;
+  height: 55px;
+  .form {
+    float: left;
+    line-height: 55px;
+    width: 45%;
+    .label {
+      font-family: Arial, serif;
+      color: #6b6b6b;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px;
+    }
+    input#e-mail {
+      border: none;
+      height: 28px;
+      width: 132px;
+      margin: 0;
+    }
+    button {
+      width: 28px;
+      height: 28px;
+      border: none;
+      background: #fd926d url("../images/plus.png") no-repeat center center;
+      vertical-align: middle;
+    }
+  }
+  .find-us-here {
+    width: 45%;
+    float: right;
+    span {
+      font-family: Arial, serif;
+      color:  #6c6c6c;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px;
+      line-height: 55px;
+    }
+    .social {
+      vertical-align: top;
+      float: right;
+      ul {
+        list-style: none;
+        li {
+          float: left;
+          width: 55px;
+          height: 55px;
+        a {
+          text-decoration: none;
+          width: 55px;
+          height: 55px;
+          img {
+            vertical-align: middle;
+          }
+          }
+        }
+        li:nth-child(2n+1) {
+          background-color:  #f7f7f7;
+        }
+      }
+    }
+
+  }
+
+}

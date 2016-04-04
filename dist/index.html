@@ -3,6 +3,7 @@
   <head>
     <title>My site</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -44,7 +45,29 @@
         </header>
       </section>
       <div class="clearfix"></div>
+      <section data-width="100%" data-height="414px" class="full-width fotorama"><img src="images/1.png" data-fit="cover"><img src="images/2.png" data-fit="cover"><img src="images/3.png" data-fit="cover"><img src="images/4.png" data-fit="cover"><img src="images/5.png" data-fit="cover"></section>
+      <div class="clearfix"></div>
+      <section class="full-width contacts">
+        <div class="main-width">
+          <div class="form">
+            <label for="e-mail" class="label">Stay updated</label>
+            <input type="mail" name="e-mail" id="e-mail" placeholder="Your email address">
+            <button></button>
+          </div>
+          <div class="find-us-here"><span>Find us here</span>
+            <div class="social">
+              <ul>
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+                <li><a href="#"><img src="images/twitter.png"></a></li>
+                <li><a href="#"><img src="images/pinterest.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
   </body>
 </html>
