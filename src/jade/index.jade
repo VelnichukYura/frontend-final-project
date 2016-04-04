@@ -6,8 +6,12 @@ html
         title new site
         meta(charset='utf=8')
         link(href="css/style.css" rel="stylesheet")
-
-
+        //GOOGLE FONTS
+        link(href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css')
+        //JQUERY
+        script(src="./libraries/jquery/dist/jquery.js")
+        script(src="./libraries/jcarousel/dist/jquery.jcarousel.js")
+        script(src="/cammon.js")
 body
     main
         section.full-width.account-section
@@ -23,8 +27,6 @@ body
                     div.currency-switcher
                         ul.menu
                             li.list_menu: a.down(href="#") $ US
-
-
                               ul.menu_drop
                                 li: a(href="#") $ EU
                                 li: a(href="#") $ GR
@@ -52,6 +54,79 @@ body
         div.clearfix
         section.full-width.slide-section
           div.slide-width
+              div#jcarousel
+                  input#slide1(type="radio" name="slides" checked)
+                  input#slide2(type="radio" name="slides")
+                  input#slide3(type="radio" name="slides")
+                  input#slide4(type="radio" name="slides")
+                  input#slide5(type="radio" name="slides")
+                  //SLIDE
+                  div.carousel-inner
+                      div.item
+                          div.primary-slide
+                              div.left-container
+                                  div.left-content
+                                      h2 Crazy
+                                      div.images-content
+                                          img(src="/images/left-slide.png")
+                                      h1 WOMAN COLLECTION
+                                      button.btn
+                                       |SHOP NOW
+                                       span.triangle-right
+                              div.right-container
+                      div.item
+                      div.item
+                      div.item
+                      div.item
+                      //CONTROL SLIDE
+              div.slide-controls
+                label(for="slide1")
+                label(for="slide2")
+                label(for="slide3")
+                label(for="slide4")
+                label(for="slide5")
+        div.clearfix
+        section.full-width.section-autorization
+          div.main-width
+              div.form
+                  label
+                    |Stay update
+                    input(type="email" placeholder="Your email address")
+                  button.btn-large
+                    span.cross
+
+              div.social
+                  p Find us here
+                  a(href="https://www.facebook.com")
+                    img(src="/images/facebook.png")
+                  a(href="https://twitter.com/?lang=ru")
+                    img(src="/images/twiter.png")
+                  a.layer(href="#")
+                    img(src="/images/layer.png")
+        div.clearfix
+        section.full-width.foto-gallery
+          div.main-width
+              div.gallery-left
+                  h3 BEST
+                  h2 outfits
+                  span &
+                  h1 looks
+
+              div.gallery-right
+                  div.party
+
+                  div.bottom-gallery
+                      div.best-sellers
+                          button
+                            |best seller
+                            span.chevron-right
+                      div.fail-leather
+                          button.btn-info shop now
+
+
+
+
+
 
 
 

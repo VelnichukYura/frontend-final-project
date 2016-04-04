@@ -19,7 +19,6 @@ main {
     width: 1000px;
     margin: 0 auto;
     height: 80px;
-    border-bottom: 1px solid #EBEBEB;
     position: relative;
 
   }
@@ -28,5 +27,24 @@ main {
     width: 7px;
     height: 4px;
     display: inline-block;
+  }
+  .triangle-right{
+    background: url("/images/triangle-right.png") no-repeat center center;
+    width: 7px;
+    height: 4px;
+    display: inline-block;
+  }
+  .cross{
+    background: url("/images/cross.png") no-repeat center center;
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+  }
+  .chevron-right{
+    background: url("/images/chevron-right.png") no-repeat;
+    width: 6px;
+    height: 11px;
+    display: inline-block;
+
   }
 }

@@ -1,0 +1,60 @@
+.section-autorization{
+  height: 55px;
+  background: #ededed;
+}
+.form{
+  width: 35%;
+  display: inline-block;
+  line-height: 55px;
+  .btn-large{
+    background-color:  #fd926d;
+    box-shadow: 0 3px 0 0 #dd6b44;
+    width: 28px;
+    height: 29px;
+    border: none;
+    position: relative;
+    top: -1px;
+  }
+  label{
+    color:  #6b6b6b;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.06px;
+    input{
+      color:  #9f9f9f;
+      font-size: 12px;
+      font-style: italic;
+      letter-spacing: -0.06px;
+      width: 160px;
+      height: 28px;
+      text-indent: 10px;
+      margin-left: 8px;
+    }
+
+  }
+}
+.social{
+  width: 45%;
+  float: right;
+  line-height: 55px;
+  text-align: right;
+  p{
+    display: inline-block;
+    color:  #6c6c6c;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.06px;
+    margin-right: 15px;
+  }
+  a{
+    text-align: center;
+    background: #ffffff;
+    display: inline-block;
+    width: 55px;
+    height: 100%;
+    &:nth-child(odd){
+      background: #ededed;
+
+    }
+  }
+}
