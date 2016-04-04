@@ -3,6 +3,8 @@ var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var git = require('gulp-git');
 var browserSync = require('browser-sync').create();
+var openURL = require('open');
+var $ = require('gulp-load-plugins')();
 
 gulp.task('sass', function () {
   return gulp.src("src/scss/style.scss")
@@ -47,6 +49,19 @@ gulp.task('push', function () {
 gulp.task('watcher', function () {
   //sass
   //jade
+});
+
+gulp.task('start:client', ['start:server', 'sass', 'jade'], function () {
+  openURL('http://localhost:9001');
+});
+
+gulp.task('start:server', function() {
+  $.connect.server({
+    root: ['dist'],
+    livereload: true,
+    // Change this to '0.0.0.0' to access the server from outside.
+    port: 9001
+  });
 });
 
 // Static Server + watching scss/jade files
