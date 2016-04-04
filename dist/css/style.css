@@ -160,3 +160,60 @@ header {
         font-size: 11px;
         font-weight: 400;
         letter-spacing: -0.055px; }
+
+.subscription-block {
+  background-color: #ededed;
+  height: 55px;
+  line-height: 55px; }
+  .subscription-block .subscription-left {
+    float: left;
+    width: 48%; }
+    .subscription-block .subscription-left form label {
+      cursor: pointer;
+      font-family: Arial;
+      color: #6b6b6b;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px; }
+      .subscription-block .subscription-left form label input {
+        height: 28px;
+        line-height: 28px;
+        border: none;
+        border-radius: 0;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing: -0.06px;
+        text-indent: 8px; }
+        .subscription-block .subscription-left form label input:focus {
+          font-style: normal; }
+    .subscription-block .subscription-left form button {
+      color: white;
+      height: 27px;
+      width: 28px;
+      border: none;
+      background: #fd926d;
+      border-bottom: 2px solid #dd6b44;
+      cursor: pointer;
+      position: relative;
+      left: -2px; }
+  .subscription-block .subscription-right {
+    float: right;
+    width: 48%;
+    text-align: right; }
+    .subscription-block .subscription-right span {
+      font-family: Arial;
+      color: #6c6c6c;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px;
+      margin-right: 15px; }
+    .subscription-block .subscription-right a {
+      display: inline-block;
+      height: 55px;
+      width: 55px;
+      text-align: center;
+      font-size: 18px;
+      color: #6b6b6b; }
+      .subscription-block .subscription-right a:nth-child(even) {
+        background: #f7f7f7; }
