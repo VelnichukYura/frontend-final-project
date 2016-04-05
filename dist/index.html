@@ -3,7 +3,7 @@
   <head>
     <title>My site</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="/libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -45,7 +45,18 @@
         </header>
       </section>
       <div class="clearfix"></div>
-      <section data-width="100%" data-height="414px" class="full-width fotorama"><img src="images/1.png" data-fit="cover"><img src="images/2.png" data-fit="cover"><img src="images/3.png" data-fit="cover"><img src="images/4.png" data-fit="cover"><img src="images/5.png" data-fit="cover"></section>
+      <section class="full-width">
+        <div class="jcarousel">
+          <ul>
+            <li><img src="images/1.png"></li>
+            <li><img src="images/2.png"></li>
+            <li><img src="images/3.png"></li>
+            <li><img src="images/4.png"></li>
+            <li><img src="images/5.png"></li>
+          </ul>
+        </div><a href="#" class="jcarousel-prev"><i class="fa fa-chevron-left"></i></a><a href="#" class="jcarousel-next"><i class="fa fa-chevron-right"></i></a>
+        <div class="jcarousel-pagination"></div>
+      </section>
       <div class="clearfix">
         <section class="full-width subscription-block">
           <div class="main-width">
@@ -63,6 +74,8 @@
       </div>
       <div class="clearfix"></div>
     </main>
-    <script src="/libraries/jquerboy/dist/jquery.min.js"></script>
+    <script src="libraries/jquery/dist/jquery.min.js"></script>
+    <script src="libraries/jcarousel/dist/jquery.jcarousel.min.js"></script>
+    <script src="slider.js"></script>
   </body>
 </html>

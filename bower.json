@@ -17,5 +17,8 @@
     "tests"
   ],
   "dependencies": {
+    "jquery": "^2.2.2",
+    "font-awesome": "font-awsome#^4.5.0",
+    "jcarousel": "^0.3.4"
   }
 }

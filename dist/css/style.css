@@ -211,3 +211,34 @@ header {
       color: #6b6b6b; }
       .subscription-block .subscription-right a:nth-child(even) {
         background: #f7f7f7; }
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 1200px; }
+  .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .jcarousel ul li {
+      float: left;
+      background: url("../images/1.png");
+      width: 1200px;
+      height: 440px;
+      vertical-align: top; }
+
+.jcarousel-pagination {
+  display: inline-block;
+  margin: 0 auto; }
+  .jcarousel-pagination a {
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #867a76;
+    width: 10px;
+    height: 10px; }
+    .jcarousel-pagination a.active {
+      background-color: #fd926d; }

@@ -41,12 +41,26 @@ block content
                     div.cart-total
                         span 0 items  |  $ 0
         div.clearfix
-        section.full-width.fotorama(data-width="100%" data-height="414px")
-            img(src='images/1.png' data-fit="cover")
-            img(src='images/2.png' data-fit="cover")
-            img(src='images/3.png' data-fit="cover")
-            img(src='images/4.png' data-fit="cover")
-            img(src='images/5.png' data-fit="cover")
+        section.full-width
+            div.jcarousel
+                ul
+                    li
+                        img(src='images/1.png')
+                    li
+                        img(src='images/2.png')
+                    li
+                        img(src='images/3.png')
+                    li
+                        img(src='images/4.png')
+                    li
+                        img(src='images/5.png')
+            a.jcarousel-prev(href="#")
+                i.fa.fa-chevron-left
+            a.jcarousel-next(href="#")
+                i.fa.fa-chevron-right
+            div.jcarousel-pagination
+
+
         div.clearfix
             section.full-width.subscription-block
                 div.main-width
