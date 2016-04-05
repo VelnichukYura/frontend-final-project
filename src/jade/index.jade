@@ -48,22 +48,24 @@ block content
             img(src='images/4.png' data-fit="cover")
             img(src='images/5.png' data-fit="cover")
         div.clearfix
-        section.full-width.contacts
-            div.main-width
-                div.form
-                    label.label(for='e-mail') Stay updated
-                    input(type="mail", name="e-mail", id='e-mail', placeholder='Your email address')
-                    button
-                div.find-us-here
-                    span Find us here
-                    div.social
-                        ul
-                            li
-                                a(href='#'): img(src='images/facebook.png')
-                            li
-                                a(href='#'): img(src='images/twitter.png')
-                            li
-                                a(href='#'): img(src='images/pinterest.png')
+            section.full-width.subscription-block
+                div.main-width
+                    div.subscription-left
+                        form(role='form', method='POST', action='')
+                            label
+                                | Stay updated
+                                input(type='text', placeholder='Your email address', required='')
+                            button
+                                i.fa.fa-plus
+                    div.subscription-right
+                        span Find us here
+                        a(href='#', target='_blank')
+                            i.fa.fa-facebook
+                        a(href='#', target='_blank')
+                            i.fa.fa-twitter
+                        a(href='#', target='_blank')
+                            i.fa.fa-pinterest
+        div.clearfix
 
 
 

@@ -17,6 +17,5 @@
     "tests"
   ],
   "dependencies": {
-    "jcarousel": "^0.3.4"
   }
 }
