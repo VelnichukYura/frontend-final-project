@@ -5,7 +5,7 @@
 
   .account-left {
     width: 45%;
-    font-family: Arial, serif;
+    font-family: "Open Sans", serif;
     font-size: 12px;
     text-transform: uppercase;
     color: white;
@@ -25,6 +25,7 @@
 
       select {
         right: 10px;
+        font-family: "Open Sans", sans-serif;
         position: relative;
         background: black;
         color: white;
@@ -53,12 +54,12 @@
       line-height: 30px;
 
       a {
-        font-family: Arial, serif;
+        font-family: "Open Sans", serif;
         font-size: 12px;
         color: white;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 0 15px 0 10px;
+        padding: 0 15px 0 15px;
       }
 
       .account-icon {

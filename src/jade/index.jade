@@ -49,14 +49,48 @@ block content
             ul
               li
                 a(href='#')
-                  img(src='/images/slider-1.png', width='1000', height='100%', alt='')
+                  img(src='images/slider-1.png', width='1000', height='100%', alt='')
               li
                 a(href='#')
-                  img(src='/images/slider-2.jpg', width='1000', height='100%', alt='')
+                  img(src='images/slider-1.png', width='1000', height='100%', alt='')
+              li
+                a(href='#')
+                  img(src='images/slider-1.png', width='1000', height='100%', alt='')
             a(href='#', class='jcarousel-control-prev')
-            | L
+              img(class='arrow-left', src='images/arrow-left.svg', width='10', height='100%', alt='')
             a(href='#', class='jcarousel-control-next')
-            | R
-
-
+              img(class='arrow-right', src='images/arrow-right.svg', width='10', height='100%', alt='')
           p.jcarousel-pagination
+      div.clearfix
+      section.middle-line.full-width
+        div.main-width
+          div.email-form
+            form(name='email', method='post')
+              span Stay updated
+              input(type='text', name='title' placeholder='Your email adress')
+              button
+                i.fa.fa-plus
+          div.social-icons
+            span Find us here
+            a(href='#', target='_blank')
+              i.fa.fa-facebook
+            a(href='#', target='_blank')
+              i.fa.fa-twitter
+            a(href='#', target='_blank')
+              i.fa.fa-instagram
+      div.clearfix
+      section.picture-blocks
+        .main-width
+          a(href="#")
+            div.left-pic-set
+              img(src='images/left-pic.jpg', alt='')
+          div.right-pic-set
+            a(href="#")
+              div.top-pic
+                img(src='images/right-top-pic.jpg', alt='')
+            a(href="#")
+              div.bottom-left-pic
+                img(src='images/bottom-left-pic.jpg', alt='')
+             a(href="#")
+              div.bottom-right-pic
+                img(src='images/bottom-right-pic.jpg', alt='')

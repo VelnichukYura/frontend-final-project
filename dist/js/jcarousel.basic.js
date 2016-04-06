@@ -31,6 +31,14 @@
         .on('jcarouselpagination:inactive', 'a', function () {
           $(this).removeClass('active');
         })
-        .jcarouselPagination();
+        .on('click', function (e) {
+          e.preventDefault();
+        })
+        .jcarouselPagination({
+          perPage: 1,
+          item: function (page) {
+            return '<a href="#' + page + '">' + page + '</a>';
+          }
+        });
   });
 })(jQuery);
