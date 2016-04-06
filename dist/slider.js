@@ -2,10 +2,23 @@ $(function() {
 
     // Инициализация слайдера
 
-    $('.jcarousel').jcarousel({
-        // Базовые настройки скрипта пишутся здесь
+    $('.jcarousel')
+        .on('jcarousel:create jcarousel:reload', function() {
+            var element = $(this),
+                width = element.innerWidth();
 
-    });
+            if (width > 1200) {
+                width = width / 1;
+            } else if (width < 600) {
+                width = width / 1 ;
+            }
+
+            element.jcarousel('items').css('width', width + 'px');
+        })
+
+        .jcarousel({
+            // Your configurations options
+        });
 
     // Инициализация прокрутки слайдера
 

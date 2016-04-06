@@ -212,26 +212,39 @@ header {
       .subscription-block .subscription-right a:nth-child(even) {
         background: #f7f7f7; }
 
-.jcarousel {
+.wrapper {
+  width: 100%;
+  height: 440px;
   position: relative;
-  overflow: hidden;
-  width: 1200px; }
-  .jcarousel ul {
-    width: 20000em;
+  background-color: #f6f3ec; }
+  .wrapper .jcarousel {
     position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .jcarousel ul li {
-      float: left;
-      background: url("../images/1.png");
-      width: 1200px;
-      height: 440px;
-      vertical-align: top; }
+    overflow: hidden;
+    width: 1200px;
+    height: 440px;
+    margin: 0 auto; }
+    .wrapper .jcarousel ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .wrapper .jcarousel ul li {
+        float: left;
+        background: url("../images/1.png"); }
+
+a {
+  width: 30px;
+  height: 117px; }
+  a .jcarousel-prev {
+    color: black;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); }
 
 .jcarousel-pagination {
-  display: inline-block;
-  margin: 0 auto; }
+  display: block;
+  margin: 0 auto;
+  position: relative; }
   .jcarousel-pagination a {
     margin: 5px;
     display: inline-block;
