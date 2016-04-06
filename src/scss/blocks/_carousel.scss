@@ -1,0 +1,130 @@
+.home-carousel {
+  height: 510px;
+  position: relative;
+
+  .jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    width: 100%;
+    height: 440px;
+  }
+  .jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+  }
+  /** Carousel **/
+
+  .jcarousel {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .jcarousel li {
+    float: left;
+    background-color: #f6f3ec;
+    display: block;
+    position: relative;
+    &>div {
+      position: absolute;
+      height: 440px;
+      left: 50%;
+      margin-left: -500px;
+    }
+  }
+  .jcarousel ul li a {
+    height: 440px;
+    display: block;
+    background-color: #f6f3ec;
+  }
+  .jcarousel ul li div.group-image {
+    height: 440px;
+    width: 48%;
+    float: left;
+    background: url("../images/main-caurosel-group.png") no-repeat;
+  }
+  .jcarousel ul li div.clothes-image {
+    height: 440px;
+    width: 48%;
+    float: right;
+    background: url("../images/main-carousel-image.png");
+  }
+
+  /** Carousel Controls **/
+
+  .jcarousel-control-prev,
+  .jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 117px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    margin-top: -100px;
+  }
+
+  .jcarousel-control-prev {
+    left: 0;
+    background: rgba(255, 255, 255, 0.9) url("../images/arrow-left.png") no-repeat 50% 50%;
+  }
+
+  .jcarousel-control-next {
+    right: 0;
+    background: rgba(255, 255, 255, 0.9) url("../images/arrow-right.png") no-repeat 50% 50%;
+  }
+
+  .jcarousel-control-prev:hover span,
+  .jcarousel-control-next:hover span {
+    display: block;
+  }
+
+  .jcarousel-control-prev.inactive,
+  .jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+  }
+
+  /** Carousel Pagination **/
+
+  .jcarousel-pagination {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    background: #867a76;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .jcarousel-pagination a.active {
+    background: #fd926d;
+  }
+
+}

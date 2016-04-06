@@ -41,6 +41,21 @@ block content
           div.cart-total
             span 0 items  |  $ 0
     div.clearfix
+    section.full-width.home-carousel
+      div.jcarousel
+        ul
+          li
+            img(src='/images/slide-1.png')
+          li
+            img(src='/images/slide-1.png')
+          li
+            img(src='/images/slide-1.png')
+      a.jcarousel-control-prev(href="#" data-jcarouselcontrol="true")
+      a.jcarousel-control-next(href="#" data-jcarouselcontrol="true")
+      p.jcarousel-pagination(data-jcarouselcontrol="true")
+        a(href="#")
+        a(href="#")
+        a(href="#")
 
     div.clearfix
     section.full-width.subscription-block
@@ -61,5 +76,23 @@ block content
           a(href='#', target='_blank')
             i.fa.fa-pinterest
     div.clearfix
+    section.full-width.products-blocks-nav#tabs
+      div.main-width
+        div
+          ul
+            li.ui-state-active
+              a(href='#tabs-1') what’s hot?
+            li
+              a(href='#tabs-2') designers
+            li
+              a(href='#tabs-3') featured
+            li
+              a(href='#tabs-4') latest
+      section.full-width.products-blocks
+        div#tabs-1 test1
+        div#tabs-2 test2
+        div#tabs-3 test3
+        div#tabs-4 test4
+
 
 
