@@ -1,0 +1,54 @@
+.imageblock {
+  height: 340px;
+  width: 970px;
+  position: relative;
+  margin: 40px auto;
+  .left {
+    background: url("../images/left.png");
+    height: 340px;
+    width: 484px;
+    float: left;
+    border-right: 2px solid white;
+  }
+  .right {
+    float: right;
+    .top {
+      background: url("../images/top.png");
+      height: 169px;
+      width: 484px;
+      vertical-align: top;
+      border-bottom: 2px solid white;
+    }
+    .bottom-left {
+      background: url("../images/bottom-left.png");
+      height: 169px;
+      width: 241px;
+      float: left;
+
+    }
+    .bottom-right {
+      background: url("../images/bottom-right.png");
+      height: 169px;
+      width: 241px;
+      float: right;
+      button {
+        background-color:  #4fafa0;
+        width: 98px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: Arial, sans-serif;
+        color:  white;
+        font-size: 12px;
+        line-height: 30px;
+        margin-top: 122px;
+        margin-left: 32px;
+
+        i {
+          font-size: 12px;
+          padding-left: 9px;
+        }
+      }
+    }
+  }
+}

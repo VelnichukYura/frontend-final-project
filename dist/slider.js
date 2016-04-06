@@ -34,7 +34,7 @@ $(function() {
 
     $('.jcarousel-pagination')
 
-    // Триггер класса active
+        // Триггер класса active
 
         .on('jcarouselpagination:active', 'a', function() {
             $(this).addClass('active');
@@ -49,6 +49,10 @@ $(function() {
             item: function(page) {
                 return '<a href="#' + page + '"></a>';
             }
+
         });
+
+    
+
 
 });
