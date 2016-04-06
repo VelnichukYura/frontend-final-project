@@ -26,10 +26,7 @@ block content
           div.your-cart
             a(href="#") Your cart
           div.cart-bag
-
-            span
-              //img(src="./images/cart-bag.png")
-              |0 items | $ 0
+            span 0 items | $ 0
         div.departments
           ul
             li new
@@ -43,3 +40,53 @@ block content
             li clearence
               img(src="./images/select_triangle.png")
     .clearfix
+    section.full-width.carousel-section
+      div.jcarousel-wrapper
+        div.jcarousel
+          ul
+            li
+              img(src="./images/main-carousel-image.png" style="width: 100%;")
+            li
+              img(src="./images/main-carousel-image.png" style="width: 100%;")
+            li
+              img(src="./images/main-carousel-image.png" style="width: 100%;")
+            li
+              img(src="./images/main-carousel-image.png" style="width: 100%;")
+            li
+              img(src="./images/main-carousel-image.png" style="width: 100%;")
+        a.jcarousel-control-prev(href="#" data-jcarouselcontrol="true")
+        a.jcarousel-control-next(href="#" data-jcarouselcontrol="true")
+        p.jcarousel-pagination(data-jcarouselcontrol="true")
+          a(href="#")
+          a(href="#")
+          a(href="#")
+          a(href="#")
+          a(href="#")
+    section.full-width.subscription-section
+      div.main-width
+        div.subscription-left
+          form(role="form", method="POST", action="")
+            label
+              | Stay updated
+              input(type="text", placeholder="Your email address", required="")
+            button
+              i.fa.fa-plus
+        div.subscription-right
+          span Find us here
+          a(href="#", target="_blank")
+            i.fa.fa-facebook
+          a(href="#", target="_blank")
+            i.fa.fa-twitter
+          a(href="#", target="_blank")
+            i.fa.fa-pinterest
+    section.full-width.marketing-section
+      div.main-width
+        div.marketing-left
+          a(href="#" target="_blank")
+        div.marketing-right
+          div.marketing-right-top
+            a(href="#" target="_blank")
+          div.marketing-right-bottom-left
+            a(href="#" target="_blank")
+          div.marketing-right-bottom-right
+            a(href="#" target="_blank")

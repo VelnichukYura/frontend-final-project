@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Lookshop</title>
+    <link href="./libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -31,8 +32,7 @@
           <div class="logo"><img src="./images/logo.png" alt="Logo"></div>
           <div class="cart-table">
             <div class="your-cart"><a href="#">Your cart</a></div>
-            <div class="cart-bag"><span>
-                <!--img(src="./images/cart-bag.png")-->0 items | $ 0</span></div>
+            <div class="cart-bag"><span>0 items | $ 0</span></div>
           </div>
           <div class="departments">
             <ul>
@@ -46,7 +46,46 @@
         </div>
       </section>
       <div class="clearfix"></div>
+      <section class="full-width carousel-section">
+        <div class="jcarousel-wrapper">
+          <div class="jcarousel">
+            <ul>
+              <li><img src="./images/main-carousel-image.png" style="width: 100%;"></li>
+              <li><img src="./images/main-carousel-image.png" style="width: 100%;"></li>
+              <li><img src="./images/main-carousel-image.png" style="width: 100%;"></li>
+              <li><img src="./images/main-carousel-image.png" style="width: 100%;"></li>
+              <li><img src="./images/main-carousel-image.png" style="width: 100%;"></li>
+            </ul>
+          </div><a href="#" data-jcarouselcontrol="true" class="jcarousel-control-prev"></a><a href="#" data-jcarouselcontrol="true" class="jcarousel-control-next"></a>
+          <p data-jcarouselcontrol="true" class="jcarousel-pagination"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></p>
+        </div>
+      </section>
+      <section class="full-width subscription-section">
+        <div class="main-width">
+          <div class="subscription-left">
+            <form role="form" method="POST" action="">
+              <label>Stay updated
+                <input type="text" placeholder="Your email address" required="">
+              </label>
+              <button><i class="fa fa-plus"></i></button>
+            </form>
+          </div>
+          <div class="subscription-right"><span>Find us here</span><a href="#" target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i class="fa fa-twitter"></i></a><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></div>
+        </div>
+      </section>
+      <section class="full-width marketing-section">
+        <div class="main-width">
+          <div class="marketing-left"><a href="#" target="_blank"></a></div>
+          <div class="marketing-right">
+            <div class="marketing-right-top"><a href="#" target="_blank"></a></div>
+            <div class="marketing-right-bottom-left"><a href="#" target="_blank"></a></div>
+            <div class="marketing-right-bottom-right"><a href="#" target="_blank"></a></div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="/libraries/jquery/dist/jquery.min.js"></script>
+    <script src="./libraries/jquery/dist/jquery.min.js"></script>
+    <script src="./libraries/jcarousel/dist/jquery.jcarousel.js"></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

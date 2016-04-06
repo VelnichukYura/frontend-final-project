@@ -152,3 +152,200 @@ main .main-width {
         padding-right: 4px;
         text-align: right;
         background: url("../images/cart-bag.png") no-repeat 5% center; }
+
+.jcarousel-wrapper {
+  margin: 20px auto;
+  position: relative;
+  width: 100%; }
+
+.jcarousel-wrapper .photo-credits {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+  opacity: .66; }
+
+/** Carousel **/
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.jcarousel li {
+  float: left;
+  background-color: #f6f3ec;
+  display: block; }
+
+.jcarousel ul li a {
+  height: 440px;
+  display: block;
+  background-color: #f6f3ec; }
+
+.jcarousel ul li div.group-image {
+  height: 440px;
+  width: 48%;
+  float: left;
+  background: url("../images/main-caurosel-group.png") no-repeat; }
+
+.jcarousel ul li div.clothes-image {
+  height: 440px;
+  width: 48%;
+  float: right;
+  background: url("../images/main-carousel-image.png"); }
+
+/** Carousel Controls **/
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 161px;
+  width: 30px;
+  height: 117px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  text-decoration: none; }
+
+.jcarousel-control-prev {
+  left: 0;
+  background: rgba(255, 255, 255, 0.9) url("../images/arrow-left.png") no-repeat 50% 50%; }
+
+.jcarousel-control-next {
+  right: 0;
+  background: rgba(255, 255, 255, 0.9) url("../images/arrow-right.png") no-repeat 50% 50%; }
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block; }
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default; }
+
+/** Carousel Pagination **/
+.jcarousel-pagination {
+  position: absolute;
+  left: 50%;
+  margin: 30px 0; }
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  background: #867a76;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 20px; }
+
+.jcarousel-pagination a.active {
+  background: #fd926d; }
+
+.subscription-section {
+  background-color: #ededed;
+  height: 55px;
+  line-height: 55px;
+  margin-top: 80px; }
+  .subscription-section .subscription-left {
+    float: left;
+    width: 48%; }
+    .subscription-section .subscription-left form label {
+      cursor: pointer;
+      font-family: Arial;
+      color: #6b6b6b;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px; }
+      .subscription-section .subscription-left form label input {
+        height: 28px;
+        line-height: 28px;
+        border: none;
+        border-radius: 0;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing: -0.06px;
+        text-indent: 8px; }
+        .subscription-section .subscription-left form label input:focus {
+          font-style: normal; }
+    .subscription-section .subscription-left form button {
+      color: white;
+      height: 27px;
+      width: 28px;
+      border: none;
+      background: #fd926d;
+      border-bottom: 2px solid #dd6b44;
+      cursor: pointer;
+      position: relative;
+      left: -2px; }
+  .subscription-section .subscription-right {
+    float: right;
+    width: 48%;
+    text-align: right; }
+    .subscription-section .subscription-right span {
+      font-family: Arial;
+      color: #6c6c6c;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.06px;
+      margin-right: 15px; }
+    .subscription-section .subscription-right a {
+      display: inline-block;
+      height: 55px;
+      width: 55px;
+      text-align: center;
+      font-size: 18px;
+      color: #6b6b6b; }
+      .subscription-section .subscription-right a:nth-child(even) {
+        background: #f7f7f7; }
+
+.marketing-section {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  height: 340px; }
+  .marketing-section .marketing-left {
+    width: 50%;
+    float: left;
+    height: 340px;
+    background: url("../images/best-looks.png");
+    background-size: cover; }
+    .marketing-section .marketing-left a {
+      display: block;
+      height: 340px; }
+  .marketing-section .marketing-right {
+    width: 50%;
+    float: right;
+    height: 340px; }
+    .marketing-section .marketing-right .marketing-right-top {
+      width: 100%;
+      height: 169px;
+      background: url("../images/summer-collection.png");
+      background-size: cover;
+      margin-bottom: 2px; }
+      .marketing-section .marketing-right .marketing-right-top a {
+        display: block;
+        height: 169px; }
+    .marketing-section .marketing-right .marketing-right-bottom-left {
+      width: 50%;
+      height: 169px;
+      background: url("../images/best-sellers.png");
+      background-size: cover;
+      float: left; }
+      .marketing-section .marketing-right .marketing-right-bottom-left a {
+        display: block;
+        height: 169px; }
+    .marketing-section .marketing-right .marketing-right-bottom-right {
+      width: 50%;
+      height: 169px;
+      background: url("../images/fall-laether.png");
+      background-size: cover;
+      float: right; }
+      .marketing-section .marketing-right .marketing-right-bottom-right a {
+        display: block;
+        height: 169px; }
