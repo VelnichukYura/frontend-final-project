@@ -15,5 +15,8 @@
     "./dist/libraries",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "font-awesome": "^4.5.0"
+  }
 }
