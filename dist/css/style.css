@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.clearfix {
+  clear: both; }
+
 .account-section {
   background-color: #000;
   height: 30px;
@@ -85,11 +92,7 @@
         z-index: 500; }
 
 * {
-  margin: 0;
-  padding: 0;
   font-family: Arial,"Helvetica Neue",sans-serif; }
-  * .clearfix {
-    clear: both; }
 
 main .full-width {
   width: 100%; }
@@ -194,7 +197,8 @@ main .chevron-right {
       float: left;
       background: #dd6b44;
       margin-right: 12px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      cursor: pointer; }
 
 #jcarousel {
   position: relative;
@@ -246,7 +250,8 @@ main .chevron-right {
       margin-top: 17px;
       color: #ffffff;
       font-size: 16px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .left-container .left-content .btn span {
         float: right;
         position: relative;
@@ -274,10 +279,11 @@ main .chevron-right {
     background-color: #fd926d;
     box-shadow: 0 3px 0 0 #dd6b44;
     width: 28px;
-    height: 29px;
+    height: 24px;
     border: none;
     position: relative;
-    top: -1px; }
+    top: -1px;
+    cursor: pointer; }
   .form label {
     color: #6b6b6b;
     font-size: 12px;
@@ -291,7 +297,8 @@ main .chevron-right {
       width: 160px;
       height: 28px;
       text-indent: 10px;
-      margin-left: 8px; }
+      margin-left: 8px;
+      border: none; }
 
 .social {
   width: 45%;
@@ -315,74 +322,76 @@ main .chevron-right {
       background: #ededed; }
 
 .foto-gallery {
-  height: 460.909px; }
+  height: 400px; }
 
-.gallery-left {
-  width: 49%;
+.center {
+  width: 100%;
   height: 340px;
-  display: inline-block;
-  background: url("/images/galeryfoto-left.png") no-repeat 100% 100%;
-  background-size: cover;
-  text-align: center;
-  text-indent: 130px;
   position: relative;
-  bottom: 70px;
-  border-right: 2px solid #ffffff; }
-  .gallery-left h3 {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #414141;
-    font-size: 33.74px;
-    transform: scaleY(1.0067); }
-  .gallery-left h2 {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #414141;
-    font-size: 74.47px;
-    transform: scaleX(1.0047);
-    text-transform: uppercase; }
-  .gallery-left span {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #ffffff;
-    border: 1px solid #414141;
-    padding: 7px;
-    background: #414141;
-    border-radius: 50%;
-    text-indent: 40px;
-    position: relative;
-    left: 55px;
-    font-size: 12px;
-    font-weight: 400; }
-  .gallery-left h1 {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #4fafa0;
-    font-size: 82.08px;
-    transform: scaleX(1.0047); }
+  top: 30px; }
+  .center .gallery-left {
+    width: 499px;
+    height: 100%;
+    background: url("/images/galeryfoto-left.png") no-repeat 100% 100%;
+    background-size: cover;
+    text-align: center;
+    text-indent: 130px;
+    border-right: 1px solid #ffffff;
+    display: inline-block; }
+    .center .gallery-left h3 {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #414141;
+      font-size: 33.74px;
+      transform: scaleY(1.0067); }
+    .center .gallery-left h2 {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #414141;
+      font-size: 74.47px;
+      transform: scaleX(1.0047);
+      text-transform: uppercase; }
+    .center .gallery-left span {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      border: 1px solid #414141;
+      padding: 7px;
+      background: #414141;
+      border-radius: 50%;
+      text-indent: 40px;
+      position: relative;
+      left: 55px;
+      font-size: 12px;
+      font-weight: 400; }
+    .center .gallery-left h1 {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #4fafa0;
+      font-size: 82.08px;
+      transform: scaleX(1.0047); }
 
 .gallery-right {
-  width: 49%;
-  height: 340px;
-  display: inline-block;
-  position: relative;
-  top: 51px; }
+  width: 499px;
+  height: 100%;
+  float: right; }
   .gallery-right .party {
     background: url("/images/galeryfoto-right1.png") no-repeat 100% 100%;
     background-size: cover;
-    height: 169px; }
+    height: 50%;
+    border-bottom: 1px solid #ffffff; }
+    .gallery-right .party img {
+      position: relative;
+      top: 15px;
+      left: 30px; }
   .gallery-right .bottom-gallery {
-    height: 170px;
-    border-top: 2px solid #ffffff; }
+    height: 50%; }
     .gallery-right .bottom-gallery .best-sellers {
-      width: 244px;
+      width: 248px;
+      height: 100%;
       background: url("/images/galeryfoto-right2.png") no-repeat 100% 100%;
       background-size: cover;
-      height: 170px;
       display: inline-block;
-      position: relative; }
+      border-right: 2px solid #ffffff; }
       .gallery-right .bottom-gallery .best-sellers button {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         height: 55px;
-        border: none;
         background: transparent;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         color: rgba(255, 255, 255, 0.7);
@@ -390,23 +399,24 @@ main .chevron-right {
         transform: scaleY(1.0067);
         text-shadow: 0 2px 0 rgba(0, 0, 0, 0.19);
         text-transform: uppercase;
-        cursor: pointer; }
+        cursor: pointer;
+        border: none;
+        position: relative;
+        top: 115px; }
         .gallery-right .bottom-gallery .best-sellers button span {
           position: relative;
           left: 10px;
           bottom: 3px; }
     .gallery-right .bottom-gallery .fail-leather {
-      width: 244px;
       background: url("/images/galeryfoto-right3.png") no-repeat 100% 100%;
       background-size: cover;
-      height: 170px;
-      display: inline-block;
-      margin-left: 2.03px;
-      position: relative; }
+      height: 100%;
+      width: 249px;
+      float: right; }
       .gallery-right .bottom-gallery .fail-leather button {
-        position: absolute;
-        bottom: 20px;
-        left: 15px;
+        position: relative;
+        top: 120px;
+        left: 20px;
         background: #4fafa0;
         width: 101px;
         height: 29px;
@@ -414,4 +424,7 @@ main .chevron-right {
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         color: #ffffff;
         font-size: 12px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        cursor: pointer; }
+        .gallery-right .bottom-gallery .fail-leather button .fa.fa-caret-right {
+          text-indent: 6px; }

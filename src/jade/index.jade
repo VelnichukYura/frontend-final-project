@@ -1,18 +1,7 @@
 //
    Created by wwws- on 25.03.2016.
-doctype html
-html
-    head
-        title new site
-        meta(charset='utf=8')
-        link(href="css/style.css" rel="stylesheet")
-        //GOOGLE FONTS
-        link(href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css')
-        //JQUERY
-        script(src="./libraries/jquery/dist/jquery.js")
-        script(src="./libraries/jcarousel/dist/jquery.jcarousel.js")
-        script(src="/cammon.js")
-body
+extends ./layouts/main.jade
+block content
     main
         section.full-width.account-section
             div.main-width
@@ -106,22 +95,27 @@ body
         div.clearfix
         section.full-width.foto-gallery
           div.main-width
-              div.gallery-left
-                  h3 BEST
-                  h2 outfits
-                  span &
-                  h1 looks
+              div.center
+                  div.gallery-left
+                      h3 BEST
+                      h2 outfits
+                      span &
+                      h1 look
 
-              div.gallery-right
-                  div.party
+                  div.gallery-right
+                      div.party
+                          img(src="/images/tag.png")
 
-                  div.bottom-gallery
-                      div.best-sellers
-                          button
-                            |best seller
-                            span.chevron-right
-                      div.fail-leather
-                          button.btn-info shop now
+                      div.bottom-gallery
+                          div.best-sellers
+                              button
+                                  | best seller
+                                  span.chevron-right
+                          div.fail-leather
+                              button shop now
+                                i.fa.fa-caret-right
+        div.clearfix
+
 
 
 
