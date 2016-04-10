@@ -62,6 +62,7 @@ gulp.task('serve', ['sass', 'jade'], function () {
 
   gulp.watch("src/scss/**/*.scss", ['sass']);
   gulp.watch("src/jade/**/*.jade", ['jade']);
+  gulp.watch("dist/**/*.js").on('change', browserSync.reload);
   gulp.watch("dist/*.html").on('change', browserSync.reload);
   gulp.watch("dist/css/*.css").on('change', browserSync.reload);
 
