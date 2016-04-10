@@ -9,3 +9,13 @@ mixin product(image, title, price, label)
       h3= title
     div.price
       span= price
+
+mixin slide(image, smallImage)
+  div.slide
+    if(smallImage)
+      div.main-width
+        a(href='#')
+          img(src='images/slide-1-1.png')
+    div.image
+      a(href='#')
+        img(src='images/slide-1.png')

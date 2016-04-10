@@ -43,14 +43,14 @@ block content
             span 0 items  |  $ 0
     div.clearfix
     section.full-width.home-carousel
-      div.jcarousel
+      div.jcarousel-full
         ul
           li
-            img(src='/images/slide-1.png')
+            +slide('/images/slide-1.png', '/images/slide-1-1.png')
           li
-            img(src='/images/slide-1.png')
+            +slide('/images/slide-1.png')
           li
-            img(src='/images/slide-1.png')
+            +slide('/images/slide-1.png')
       a.jcarousel-control-prev(href="#" data-jcarouselcontrol="true")
       a.jcarousel-control-next(href="#" data-jcarouselcontrol="true")
       p.jcarousel-pagination(data-jcarouselcontrol="true")
@@ -84,11 +84,11 @@ block content
             li.ui-state-active
               a(href='#tabs-hot') what’s hot?
             li
-              a(href='#tabs-2') designers
+              a(href='#tabs-designers') designers
             li
-              a(href='#tabs-3') featured
+              a(href='#tabs-featured') featured
             li
-              a(href='#tabs-4') latest
+              a(href='#tabs-latest') latest
       section.full-width.products-blocks
         div#tabs-hot
           div.products-jcarousel-wrapper
@@ -102,9 +102,42 @@ block content
                   +product('/images/product-3.png', 'Product 3', '55', true)
                 li
                   +product('/images/product-4.png', 'Product 4', '55', true)
-        div#tabs-2 test2
-        div#tabs-3 test3
-        div#tabs-4 test4
+        div#tabs-designers
+          div.products-jcarousel-wrapper
+            div.products-jcarousel#products-designers
+              ul
+                li
+                  +product('/images/product-1.png', 'Product 1', '55', true)
+                li
+                  +product('/images/product-2.png', 'Product 2', '55', false)
+                li
+                  +product('/images/product-3.png', 'Product 3', '55', true)
+                li
+                  +product('/images/product-4.png', 'Product 4', '55', true)
+        div#tabs-featured
+          div.products-jcarousel-wrapper
+            div.products-jcarousel#products-featured
+              ul
+                li
+                  +product('/images/product-1.png', 'Product 1', '55', true)
+                li
+                  +product('/images/product-2.png', 'Product 2', '55', false)
+                li
+                  +product('/images/product-3.png', 'Product 3', '55', true)
+                li
+                  +product('/images/product-4.png', 'Product 4', '55', true)
+        div#tabs-latest
+          div.products-jcarousel-wrapper
+            div.products-jcarousel#products-latest
+              ul
+                li
+                  +product('/images/product-1.png', 'Product 1', '55', true)
+                li
+                  +product('/images/product-2.png', 'Product 2', '55', false)
+                li
+                  +product('/images/product-3.png', 'Product 3', '55', true)
+                li
+                  +product('/images/product-4.png', 'Product 4', '55', true)
 
 
 

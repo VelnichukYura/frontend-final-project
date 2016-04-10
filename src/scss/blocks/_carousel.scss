@@ -1,72 +1,57 @@
 .home-carousel {
   height: 510px;
-  position: relative;
-
-  .jcarousel-wrapper {
-    margin: 20px auto;
-    position: relative;
-    width: 100%;
-    height: 440px;
-  }
-  .jcarousel-wrapper .photo-credits {
-    position: absolute;
-    right: 15px;
-    bottom: 0;
-    font-size: 13px;
-    color: #fff;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
-    opacity: .66;
-  }
-  /** Carousel **/
-
-  .jcarousel {
+  .jcarousel-full {
     position: relative;
     overflow: hidden;
-  }
-
-  .jcarousel img {
-    display: block;
-    max-width: 100%;
-    height: auto !important;
-    margin: 0 auto;
-  }
-
-  .jcarousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .jcarousel li {
-    float: left;
-    background-color: #f6f3ec;
-    display: block;
-    position: relative;
-    &>div {
-      position: absolute;
+    width: 100%;
+    height: 440px;
+    ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
       height: 440px;
-      left: 50%;
-      margin-left: -500px;
+      li {
+        float: left;
+        height: 440px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        .slide {
+          display: block;
+          max-width: 100%;
+          position: relative;
+          height: 440px;
+          .image {
+            position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 440px;
+            z-index: 1;
+            a {
+              display: block;
+              width: 100%;
+              height: 440px;
+              text-decoration: none;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .main-width {
+            position: relative;
+            z-index: 100;
+            a {
+              img {
+                margin-top: 30px;
+              }
+            }
+          }
+        }
+      }
     }
-  }
-  .jcarousel ul li a {
-    height: 440px;
-    display: block;
-    background-color: #f6f3ec;
-  }
-  .jcarousel ul li div.group-image {
-    height: 440px;
-    width: 48%;
-    float: left;
-    background: url("../images/main-caurosel-group.png") no-repeat;
-  }
-  .jcarousel ul li div.clothes-image {
-    height: 440px;
-    width: 48%;
-    float: right;
-    background: url("../images/main-carousel-image.png");
   }
 
   /** Carousel Controls **/
@@ -81,6 +66,7 @@
     background: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     margin-top: -100px;
+    z-index: 200;
   }
 
   .jcarousel-control-prev {
