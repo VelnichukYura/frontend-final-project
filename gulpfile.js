@@ -41,7 +41,7 @@ gulp.task('pull', function () {
 });
 
 gulp.task('push', function () {
-  git.exec({args: 'push'}, function (err, stdout) {
+  git.exec({args: 'push origin develop'}, function (err, stdout) {
     console.log(err);
     console.log(stdout);
   });
