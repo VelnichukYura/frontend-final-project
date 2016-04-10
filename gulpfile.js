@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var git = require('gulp-git');
 var browserSync = require('browser-sync').create();
-var $ = require('gulp-load-plugins')();
+var imageop = require('gulp-image-optimization');
 
 gulp.task('sass', function () {
   return gulp.src("src/scss/style.scss")
@@ -19,6 +19,14 @@ gulp.task('jade', function () {
     }))
     .pipe(gulp.dest('./dist/'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('images', function(cb) {
+  gulp.src(['src/img/*.png','src/img/*.jpg','src/img/*.gif','src/img/*.jpeg']).pipe(imageop({
+    optimizationLevel: 5,
+    progressive: true,
+    interlaced: true
+  })).pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb);
 });
 
 gulp.task('commit', function () {
@@ -62,9 +70,11 @@ gulp.task('serve', ['sass', 'jade'], function () {
 
   gulp.watch("src/scss/**/*.scss", ['sass']);
   gulp.watch("src/jade/**/*.jade", ['jade']);
+  gulp.watch("src/img/*.*", ['images']);
   gulp.watch("dist/**/*.js").on('change', browserSync.reload);
   gulp.watch("dist/*.html").on('change', browserSync.reload);
   gulp.watch("dist/css/*.css").on('change', browserSync.reload);
+  gulp.watch("dist/images/*.*").on('change', browserSync.reload);
 
 });
 
