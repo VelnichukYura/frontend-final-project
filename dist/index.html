@@ -1,11 +1,188 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My site</title>
-    <link href="/css/style.css" rel="stylesheet">
+    <title>Lookshop</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello world</h1>
-    <script src="/libraries/jquery/dist/jquery.min.js"></script>
+    <main>
+      <section class="full-width account">
+        <div class="main-width">
+          <div class="account-left"><span>custom care:</span>888-23-4567</div>
+          <div class="account-right">
+            <div class="search">
+              <input type="text">
+            </div>
+            <div class="account-page"><a href="#">my account</a></div>
+            <div class="currency-switcher">
+              <select>
+                <option>&#36;   US</option>
+                <option>&#8364; EURO</option>
+                <option>&#8372; UAH</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+      <section class="full-width header-section">
+        <header class="main-width">
+          <div class="logo"><a href="/"><img src="images/logo.png"></a></div>
+          <nav class="main-menu">
+            <ul>
+              <li><a href="#">new</a></li>
+              <li><a href="#">designers</a></li>
+              <li><a href="#">women</a></li>
+              <li><a href="#">men</a></li>
+              <li><a href="#">clearence</a></li>
+            </ul>
+          </nav>
+          <div class="cart">
+            <div class="cart-header">Your cart<span class="triangle-down"></span></div>
+            <div class="cart-total"><span>0 items  |  $ 0</span></div>
+          </div>
+        </header>
+      </section>
+      <div class="clearfix"></div>
+      <section class="full-width slider">
+        <div class="jcarousel">
+          <ul>
+            <li><img src="images/slider.png"></li>
+            <li><img src="images/slider.png"></li>
+            <li><img src="images/slider.png"></li>
+            <li><img src="images/slider.png"></li>
+            <li><img src="images/slider.png"></li>
+          </ul>
+        </div>
+      </section><a href="#" data-jcarouselcontrol="true" class="jcarousel-control-prev"><a href="#" data-jcarouselcontrol="true" class="jcarousel-control-prev"></a>
+        <p class="jcarousel-pagination"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></p></a>
+      <div class="clearfix"></div>
+      <section class="full-width subscription">
+        <div class="main-width">
+          <div class="subscription-left">
+            <form role="form" method="POST" action="">
+              <label>Stay updated
+                <input type="text" placeholder="Your email address" required="">
+              </label>
+              <button><i class="fa fa-plus"></i></button>
+            </form>
+          </div>
+          <div class="subscription-right"><span>Find us here</span><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/?lang=ru"><i class="fa fa-twitter"></i></a><a href="https://ru.pinterest.com/"><i class="fa fa-pinterest"></i></a></div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+      <section class="full-width wallpapers-section">
+        <div class="wallpapers">
+          <div class="left"><a href="#"></a></div>
+          <div class="right">
+            <div class="top"><a href="#"></a></div>
+            <div class="bottom-left"><a href="#"></a></div>
+            <div class="bottom-right">
+              <button>shop now<i class="fa fa-caret-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+      <section id="tabs" class="full-width products-blocks-nav">
+        <div class="main-width">
+          <div>
+            <ul>
+              <li class="ui-state-active"><a href="#tabs-hot">what’s hot?</a></li>
+              <li><a href="#tabs-designers">designers</a></li>
+              <li><a href="#tabs-featured">featured</a></li>
+              <li><a href="#tabs-latest">latest</a></li>
+            </ul>
+          </div>
+        </div>
+        <section class="full-width products-blocks">
+          <div id="tabs-hot">
+            <div class="products-jcarousel-wrapper">
+              <div id="products-hot" class="products-jcarousel">
+                <ul>
+                  <li>
+                    <product images/product_1.png Product 1 55 true></product>
+                  </li>
+                  <li>
+                    <product images/product_2.png Product 2 55 false></product>
+                  </li>
+                  <li>
+                    <product images/product_3.png Product 3 55 true></product>
+                  </li>
+                  <li>
+                    <product images/product_4.png Product 4 55 true></product>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="tabs-designers">
+            <div class="products-jcarousel-wrapper">
+              <div id="products-designers" class="products-jcarousel">
+                <ul>
+                  <li>
+                    <product images/product_1.png Product 1 55 true></product>
+                  </li>
+                  <li>
+                    <product images/product_2.png Product 2 55 false></product>
+                  </li>
+                  <li>
+                    <product images/product_3.png Product 3 55 true></product>
+                  </li>
+                  <li>
+                    <product images/product_4.png Product 4 55 true></product>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="tabs-featured">
+            <div class="products-jcarousel-wrapper">
+              <div id="products-featured" class="products-jcarousel">
+                <ul>
+                  <li>
+                    <product images/product_1.png Product 1 55 true></product>
+                  </li>
+                  <li>
+                    <product images/product_2.png Product 2 55 false></product>
+                  </li>
+                  <li>
+                    <product images/product_3.png Product 3 55 true></product>
+                  </li>
+                  <li>
+                    <product images/product_4.png Product 4 55 true></product>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="tabs-latest">
+            <div class="products-jcarousel-wrapper">
+              <div id="products-latest" class="products-jcarousel">
+                <ul>
+                  <li>
+                    <product images/product_1.png Product 1 55 true></product>
+                  </li>
+                  <li>
+                    <product images/product_2.png Product 2 55 false></product>
+                  </li>
+                  <li>
+                    <product images/product_3.png Product 3 55 true></product>
+                  </li>
+                  <li>
+                    <product images/product_4.png Product 4 55 true></product>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./libraries/jquery/dist/jquery.min.js"></script>
+    <script src="/libraries/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./libraries/jcarousel/dist/jquery.jcarousel.js"></script>
+    <script src="./js/jcarousel_common.js"></script>
   </body>
 </html>
