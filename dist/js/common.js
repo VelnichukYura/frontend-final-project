@@ -12,6 +12,10 @@
         wrap: 'circular'
       });
 
+    jcarousel.jcarouselAutoscroll({
+      interval: 2000
+    });
+
     $('.jcarousel-control-prev')
       .jcarouselControl({
         target: '-=1'
