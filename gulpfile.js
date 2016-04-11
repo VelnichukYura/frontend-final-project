@@ -61,4 +61,4 @@ gulp.task('serve', ['sass', 'jade'], function () {
 });
 
 
-gulp.task('default', ['watcher']);
+gulp.task('default', ['serve']);
