@@ -61,8 +61,90 @@ $(function() {
             }
 
         });
-
-    
-
-
 });
+
+
+$(function () {
+    $("#tabs").tabs();
+});
+
+(function ($) {
+    $(function () {
+        productsCarousel('products-hot');
+        productsCarousel('products-designers');
+        productsCarousel('products-featured');
+        productsCarousel('products-latest');
+    });
+})(jQuery);
+
+function productsCarouselDesigners(id) {
+    id = 'products-designers';
+    var jcarouselDesigners = $('#' + id);
+
+    jcarouselDesigners
+        .on('jcarousel:reload jcarousel:create', function () {
+            var carousel = $(this),
+                width = carousel.innerWidth();
+
+            if (width >= 600) {
+                width = width / 3;
+            } else if (width >= 350) {
+                width = width / 2;
+            }
+
+            carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+        })
+        .jcarousel({
+            wrap: 'circular'
+        });
+
+    jcarouselDesigners.jcarouselAutoscroll({
+        interval: 2000
+    });
+
+    $('#-prev-' + id)
+        .jcarouselControl({
+            target: '-=1'
+        });
+
+    $('#-next-' + id)
+        .jcarouselControl({
+            target: '+=1'
+        });
+};
+
+function productsCarousel(id) {
+    id = 'products-hot';
+    var jcarousel = $('#' + id);
+
+    jcarousel
+        .on('jcarousel:reload jcarousel:create', function () {
+            var carousel = $(this),
+                width = carousel.innerWidth();
+
+            if (width >= 600) {
+                width = width / 3;
+            } else if (width >= 350) {
+                width = width / 2;
+            }
+
+            carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+        })
+        .jcarousel({
+            wrap: 'circular'
+        });
+
+    jcarousel.jcarouselAutoscroll({
+        interval: 2000
+    });
+
+    $('#-prev-' + id)
+        .jcarouselControl({
+            target: '-=1'
+        });
+
+    $('#-next-' + id)
+        .jcarouselControl({
+            target: '+=1'
+        });
+};

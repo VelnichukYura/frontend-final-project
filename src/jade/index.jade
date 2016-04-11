@@ -1,4 +1,5 @@
 extends ./layouts/main.jade
+include ./layouts/mixin
 block content
     main
         section.full-width.account-section
@@ -107,7 +108,7 @@ block content
                 div
                     ul
                         li.ui-state-active
-                            a(href='#tabs-hot') what’s hot?
+                            a(href='#tabs-hot') what's hot?
                         li
                             a(href='#tabs-designers') designers
                         li
@@ -120,49 +121,49 @@ block content
                         div.products-jcarousel#products-hot
                             ul
                                 li
-                                    +product('/images/product-1.png', 'Product 1', '55', true)
+                                    +product('images/product-1.png', 'Product 1', '55', true)
                                 li
-                                    +product('/images/product-2.png', 'Product 2', '55', false)
+                                    +product('images/product-2.png', 'Product 2', '55', false)
                                 li
-                                    +product('/images/product-3.png', 'Product 3', '55', true)
+                                    +product('images/product-3.png', 'Product 3', '55', true)
                                 li
-                                    +product('/images/product-4.png', 'Product 4', '55', true)
+                                    +product('images/product-4.png', 'Product 4', '55', true)
                 div#tabs-designers
                     div.products-jcarousel-wrapper
                         div.products-jcarousel#products-designers
                             ul
                                 li
-                                    +product('/images/product-1.png', 'Product 1', '55', true)
+                                    +product('images/product-1.png', 'Product 1', '55', true)
                                 li
-                                    +product('/images/product-2.png', 'Product 2', '55', false)
+                                    +product('images/product-2.png', 'Product 2', '55', false)
                                 li
-                                    +product('/images/product-3.png', 'Product 3', '55', true)
+                                    +product('images/product-3.png', 'Product 3', '55', true)
                                 li
-                                    +product('/images/product-4.png', 'Product 4', '55', true)
+                                    +product('images/product-4.png', 'Product 4', '55', true)
                 div#tabs-featured
                     div.products-jcarousel-wrapper
                         div.products-jcarousel#products-featured
                             ul
                                 li
-                                    +product('/images/product-1.png', 'Product 1', '55', true)
+                                    +product('images/product-1.png', 'Product 1', '55', true)
                                 li
-                                    +product('/images/product-2.png', 'Product 2', '55', false)
+                                    +product('images/product-2.png', 'Product 2', '55', false)
                                 li
-                                    +product('/images/product-3.png', 'Product 3', '55', true)
+                                    +product('images/product-3.png', 'Product 3', '55', true)
                                 li
-                                    +product('/images/product-4.png', 'Product 4', '55', true)
+                                    +product('images/product-4.png', 'Product 4', '55', true)
                 div#tabs-latest
                     div.products-jcarousel-wrapper
                         div.products-jcarousel#products-latest
                             ul
                                 li
-                                    +product('/images/product-1.png', 'Product 1', '55', true)
+                                    +product('images/product-1.png', 'Product 1', '55', true)
                                 li
-                                    +product('/images/product-2.png', 'Product 2', '55', false)
+                                    +product('images/product-2.png', 'Product 2', '55', false)
                                 li
-                                    +product('/images/product-3.png', 'Product 3', '55', true)
+                                    +product('images/product-3.png', 'Product 3', '55', true)
                                 li
-                                    +product('/images/product-4.png', 'Product 4', '55', true)
+                                    +product('images/product-4.png', 'Product 4', '55', true)
 
 
 
