@@ -95,13 +95,29 @@ block content
             div.products-jcarousel#products-hot
               ul
                 li
-                  +product('/images/product-1.png', 'Product 1', '55', true)
+                  +product('/images/product-1.png', 'Product 1', '55', '/images/label.png')
                 li
                   +product('/images/product-2.png', 'Product 2', '55', false)
                 li
-                  +product('/images/product-3.png', 'Product 3', '55', true)
+                  +product('/images/product-3.png', 'Product 3', '55', '/images/label.png')
                 li
-                  +product('/images/product-4.png', 'Product 4', '55', true)
+                  +product('/images/product-1.png', 'Product 4', '55', '/images/label.png')
+                li
+                  +product('/images/product-1.png', 'Product 1', '55', '/images/label.png')
+                li
+                  +product('/images/product-2.png', 'Product 2', '55', false)
+                li
+                  +product('/images/product-3.png', 'Product 3', '55', '/images/label.png')
+                li
+                  +product('/images/product-1.png', 'Product 4', '55', '/images/label.png')
+                li
+                  +product('/images/product-1.png', 'Product 1', '55', '/images/label.png')
+                li
+                  +product('/images/product-2.png', 'Product 2', '55', false)
+                li
+                  +product('/images/product-3.png', 'Product 3', '55', '/images/label.png')
+                li
+                  +product('/images/product-1.png', 'Product 4', '55', '/images/label.png')
         div#tabs-designers
           div.products-jcarousel-wrapper
             div.products-jcarousel#products-designers
@@ -138,6 +154,11 @@ block content
                   +product('/images/product-3.png', 'Product 3', '55', true)
                 li
                   +product('/images/product-4.png', 'Product 4', '55', true)
+      section.full-width.home-label
+        div.main-width
+          fieldset
+            legend(align='center')
+              img(src='/images/home-label.png')
 
 
 
