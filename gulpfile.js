@@ -19,11 +19,10 @@ gulp.task('html', function () {
 
 //jade
 gulp.task('jade', function() {
-    var YOUR_LOCALS = {};
-
     gulp.src('./src/jade/*.jade')
         .pipe(jade({
-            locals: YOUR_LOCALS
+            pretty: true
+
         }))
 
         .pipe(gulp.dest('./dist/'))
@@ -37,9 +36,9 @@ gulp.task('sass', function () {
 });
 //watch
 gulp.task('watch',function() {
-    gulp.watch('./src/jade/*.jade', ['jade'])
+    gulp.watch('./src/jade/**/*.jade', ['jade'])
     gulp.watch('dist/*.html', ['html'])
-    gulp.watch('src/scss/*.scss', ['sass'])
+    gulp.watch('./src/scss/**/*.scss', ['sass'])
 });
 //default task
 gulp.task('default', ['connect','watch']);

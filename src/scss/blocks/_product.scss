@@ -1,0 +1,112 @@
+.product-carousel{
+  .main-width{
+    height: 47px;
+    ul{
+      list-style: none;
+      li{
+        float: left;
+        display: block;
+        height: 47px;
+        padding: 0 20px 0 20px;
+        line-height: 47px;
+        text-align: center;
+        a{
+          color: #555555;
+          font-size: 15px;
+          font-weight: 400;
+          letter-spacing: -0.15px;
+          text-decoration: none;
+          display: block;
+          text-transform: uppercase;
+        }
+        &.ui-state-active{
+          background: #fd926d;
+          a{
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: -0.15px;
+          }
+        }
+      }
+    }
+  }
+}
+.product-blocks{
+  height: 455px;
+  background: #FA916C;
+}
+//JCAROUSEL
+.jcarousel-wrapper{
+  position: relative;
+  height: 420px;
+  .jcarousel{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    ul{
+      width: 20000em;
+      list-style: none;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      li{
+        float: left;
+        padding: 30px 10px 0 0;
+        width: 220px !important;
+        position: relative;
+        &:hover .active-shop{
+          display: block;
+        }
+        a{
+          img{
+            display: block;
+            max-width: 100%;
+
+            }
+          }
+        }
+      }
+
+    }
+  }
+.active-shop{
+  position: absolute;
+  bottom: 185px;
+  left: 43px;
+  width: 134px;
+  height: 134px;
+  background: url("/images/active1.png") no-repeat 50% 50%;
+  display: none;
+  transition: 1s ease-out 0.5s;
+
+}
+
+//CAROUSEL CONTROLS
+.jcarousel-control-prev{
+  position: absolute;
+  top: -47px;
+  right: 223px;
+  width: 47px;
+  height: 47px;
+  text-align: center;
+  background: #FA916C;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  color: white;
+  &:hover{
+    background: #EFEFEF;
+  }
+  &:hover span{
+    display: block;
+  }
+}
+.jcarousel-control-next{
+  @extend .jcarousel-control-prev;
+  right: 176px;
+  &:hover span{
+    display: block;
+  }
+}

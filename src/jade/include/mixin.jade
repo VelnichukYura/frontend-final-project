@@ -1,0 +1,120 @@
+mixin accountSection
+    div.account-left
+        span custom care:
+        | 888-23-4567
+    div.account-right
+        div.search
+            input(type='text')
+        div.account-page-link
+            a(href='#') my account
+        div.currency-switcher
+            ul.menu
+                li.list_menu: a.down(href="#") $ US
+                    ul.menu_drop
+                        li: a(href="#") $ EU
+                        li: a(href="#") $ GR
+                        li: a(href="#") $ RU
+
+//SLIDER HOME
+mixin sliderHome
+    div.jcarousel-wrapper
+        div.jcarousel
+            ul
+                li
+                    a(href="#")
+                        img(src="/images/slide2.png" alt="img2")
+                        span.active-shop
+                li
+                    a(href="#")
+                        img(src="/images/slide3.png" alt="img2")
+                        span.active-shop
+                li
+                    a(href="#")
+                        img(src="/images/slide2.png" alt="img2")
+                        span.active-shop
+                li
+                    a(href="#")
+                        img(src="/images/slide5.png" alt="img2")
+                        span.active-shop
+                li
+                    a(href="#")
+                        img(src="/images/slide3.png" alt="img2")
+                        span.active-shop
+                li
+                    a(href="#")
+                        img(src="/images/slide5.png")
+                        span.active-shop
+        a.jcarousel-control-prev.active(href="#") &lsaquo;
+        a.jcarousel-control-next(href="#") &rsaquo;
+//DISCOUNT
+mixin disccountProducts
+    div.top-discount
+        img(src="/images/discount.png")
+    div.discount-products
+        div
+            a(href="#")
+                img(src="images/discount-img1.png")
+        div
+            a(href="#")
+                img(src="images/discount-img2.png")
+        div
+            a(href="#")
+                img(src="images/discount-img3.png")
+        div
+            a(href="#")
+                img(src="images/discount-img4.png")
+//FOOTER TOP
+mixin footerTop
+    div.footer-top
+        div.customer
+            h4 Customer Service
+            a(href="#") Contact
+            a(href="#") FAQ
+            a(href="#") Terms of payment
+            a(href="#") Terms of sale
+            a(href="#") Returns and Refunds
+            a(href="#") Delivery terms and conditions
+        div.information
+            h4 Information
+            a(href="#") Affiliate
+            a(href="#") Cookies
+            a(href="#") How to Shop
+            a(href="#") About Nelly
+            a(href="#") Investor relations
+        div.campaigns
+            h4 Campaigns
+            a(href="#") Evening dresses
+            a(href="#") Makeup
+            a(href="#") Fashion forward
+            a(href="#") training clothes
+            a(href="#") Special Occasion Dresses
+        div.stores
+            h4 Stores
+            a(href="#") Paris
+            a(href="#") New York
+            a(href="#") London
+            a(href="#") Madrid
+            a(href="#") Tokio
+        div.social-footer
+            h4 Social
+            a.fa.fa-twitter(href="#")
+            a.fa.fa-pinterest(href="#")
+            a.fa.fa-facebook(href="#")
+            br
+            a.fa.fa-google-plus(href="#")
+            a.fa.fa-tumblr(href="#")
+            a.fa.fa-vimeo(href="#")
+        div.secured
+            img(src="/images/secured.png")
+//FOOTER BOTTOM
+mixin footerBottom
+    div.bottom-left
+        a(href="#") Privacy & Cookies
+        a(href="#") Terms & Conditions
+        a(href="#") Accessibility
+        a(href="#") Store Directory
+        a(href="#") About us
+    div.bottom-right
+        p.
+            © LookShop.com
+            All Rights Reserved

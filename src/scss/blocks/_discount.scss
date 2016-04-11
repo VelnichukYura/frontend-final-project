@@ -1,0 +1,18 @@
+.discount{
+  height: 566px;
+
+  .top-discount{
+    position: relative;
+    top: 13px;
+  }
+  .discount-products{
+    position: relative;
+    top: 20px;
+
+    div{
+      width: 230px;
+      display: inline-block;
+      padding-right: 15px;
+    }
+  }
+}

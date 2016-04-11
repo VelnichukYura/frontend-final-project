@@ -1,0 +1,22 @@
+.brand-block{
+  height: 100px;
+  border-bottom: 1px solid #D8D9D8;
+  .brand-top{
+    height: 20px;
+    text-align: center;
+  }
+  .logo-brand{
+    height: 70px;
+    line-height: 70px;
+    a{
+      display: inline-block;
+      width: 125px;
+      text-align: center;
+      &:nth-last-child(-n+4){
+        position: relative;
+        bottom: 10px;
+      }
+    }
+  }
+
+}

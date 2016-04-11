@@ -1,0 +1,141 @@
+.footer{
+  height: 200px;
+  background: #ededed;
+  .footer-top{
+    height:200px;
+    position: relative;
+
+    .customer{
+      width: 170px;
+      height: 128px;
+      position: absolute;
+      top: 30px;
+      left:0;
+      h4{
+        color:#544e4d;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.16px;
+        line-height: 20px;
+        text-align: left;
+      }
+      a{
+        color: #544e4d;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    .information{
+      width: 100px;
+      height: 110px;
+      position: absolute;
+      top: 30px;
+      left: 225px;
+      h4{
+        color:#544e4d;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.16px;
+        line-height: 20px;
+        text-align: left;
+      }
+      a{
+        color: #544e4d;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    .campaigns{
+      width: 115px;
+      height: 126px;
+      position: absolute;
+      top: 30px;
+      left:365px;
+      h4{
+        color:#544e4d;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.16px;
+        line-height: 20px;
+        text-align: left;
+      }
+      a{
+        color: #544e4d;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    .stores{
+      width: 60px;
+      height: 109px;
+      position: absolute;
+      top: 30px;
+      left:517px;
+      h4{
+        color:#544e4d;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.16px;
+        line-height: 20px;
+        text-align: left;
+      }
+      a{
+        color: #544e4d;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-decoration: none;
+        display: block;
+      }
+    }
+    .social-footer{
+      width: 145px;
+      height: 115px;
+      float: right;
+      position: absolute;
+      top:30px;
+      right:210px;
+      h4{
+        color:#544e4d;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.16px;
+        line-height: 20px;
+        text-align: left;
+      }
+      a{
+        text-decoration: none;
+        border: 1px solid #4A4A49;
+        border-radius: 50%;
+        color: white;
+        width: 35px;
+        height: 34px;
+        text-align: center;
+        line-height:35px;
+        margin:10px 10px 0 0;
+        background: #4A4A49;
+        display: inline-block;
+      }
+    }
+    .secured{
+      float: right;
+      position: absolute;
+      top: 40px;
+      right: 30px;
+    }
+  }
+
+}

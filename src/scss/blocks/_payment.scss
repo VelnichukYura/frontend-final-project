@@ -1,0 +1,25 @@
+.pyament-system{
+  height: 60px;
+  background: #F4F4F4;
+
+  .card-payment{
+    width: 600px;
+    height: 40px;
+    margin: auto;
+    line-height: 19px;
+    p{
+      width: 80px;
+      color: #414141;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.12px;
+      position: relative;
+      top:19px;
+      left: 22px;
+
+    }
+    img{
+      float: right;
+    }
+  }
+}

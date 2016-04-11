@@ -1,25 +1,9 @@
-//
-   Created by wwws- on 25.03.2016.
 extends ./layouts/main.jade
 block content
     main
         section.full-width.account-section
             div.main-width
-                div.account-left
-                    span custom care:
-                    | 888-23-4567
-                div.account-right
-                    div.search
-                        input(type='text')
-                    div.account-page-link
-                        a(href='#') my account
-                    div.currency-switcher
-                        ul.menu
-                            li.list_menu: a.down(href="#") $ US
-                              ul.menu_drop
-                                li: a(href="#") $ EU
-                                li: a(href="#") $ GR
-                                li: a(href="#") $ RU
+                +accountSection
         div.clearfix
         section.full-width.header-section
             header.header-width
@@ -115,6 +99,75 @@ block content
                               button shop now
                                 i.fa.fa-caret-right
         div.clearfix
+        section.full-width.product-carousel#tabs
+          div.main-width
+              div
+                  ul
+                      li.ui-state-active
+                          a(href="#tabs-1") what’s hot?
+                      li
+                          a(href="#tabs-2") designers
+                      li
+                          a(href="#tabs-3") featured
+                      li
+                          a(href="#tabs-4") latest
+          section.full-width.product-blocks
+              div#tabs-1
+                  +sliderHome
+              div#tabs-2
+                  +sliderHome
+              div#tabs-3
+                  +sliderHome
+              div#tabs-4
+                  +sliderHome
+        div.clearfix
+        section.full-width.discount
+          div.main-width
+              +disccountProducts
+        div.clearfix
+        section.full-width.brand-block
+            div.brand-top
+                p
+                  img(src="/images/brand-header.png")
+            div.main-width
+                div.logo-brand
+                    a(href="#")
+                        img(src="/images/brand1.png")
+                    a(href="#")
+                        img(src="/images/brand2.png")
+                    a(href="#")
+                        img(src="/images/brand3.png")
+                    a(href="#")
+                        img(src="/images/brand4.png")
+                    a(href="#")
+                        img(src="/images/brand5.png")
+                    a(href="#")
+                        img(src="/images/brand6.png")
+                    a(href="#")
+                        img(src="/images/brand7.png")
+                    a(href="#")
+                        img(src="/images/brand8.png")
+        div.clearfix
+        section.full-width.look-shop
+            div.main-width
+                h2 About LookShop
+                p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+        div.clearfix
+        section.full-width.pyament-system
+            div.main-width
+                div.card-payment
+                    p We accept
+                    img(src="/images/payment.png")
+        div.clearfix
+        section.full-width.footer
+            div.main-width
+               +footerTop
+        div.clearfix
+        section.full-width.footer-bottom
+            div.main-width
+                +footerBottom
+        div.clearfix
+
 
 
 
