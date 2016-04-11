@@ -212,59 +212,67 @@ header {
       .subscription-block .subscription-right a:nth-child(even) {
         background: #f7f7f7; }
 
-.wrapper .jcarousel {
-  position: relative;
-  overflow: hidden;
-  height: 440px;
-  margin: 0 auto;
-  width: 1200px; }
-  .wrapper .jcarousel ul {
-    width: 20000em;
-    position: absolute;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .wrapper .jcarousel ul li {
-      float: left; }
-
-.wrapper .jcarousel-prev {
-  position: relative;
-  float: left; }
-  .wrapper .jcarousel-prev a {
-    background-color: rgba(255, 255, 255, 0.9);
+.carousel {
+  height: 510px; }
+  .carousel .jcarousel-wrapper {
     position: relative;
-    width: 30px;
-    height: 117px; }
-
-.wrapper .jcarousel-next {
-  position: relative;
-  float: right; }
-  .wrapper .jcarousel-next a {
-    background-color: rgba(255, 255, 255, 0.9);
-    position: relative;
-    width: 30px;
-    height: 117px; }
-
-.wrapper .jcarousel-pagination {
-  margin: 0 auto;
-  display: block; }
-  .wrapper .jcarousel-pagination a {
-    margin: 5px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 50%;
-    background-color: #867a76;
-    width: 10px;
-    height: 10px; }
-    .wrapper .jcarousel-pagination a.active {
-      background-color: #fd926d; }
+    width: 100%; }
+    .carousel .jcarousel-wrapper .jcarousel {
+      position: relative;
+      overflow: hidden;
+      height: 440px;
+      width: 100%; }
+      .carousel .jcarousel-wrapper .jcarousel ul {
+        width: 20000em;
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .carousel .jcarousel-wrapper .jcarousel ul li {
+          float: left; }
+          .carousel .jcarousel-wrapper .jcarousel ul li img {
+            display: block;
+            width: 100%;
+            height: auto !important; }
+    .carousel .jcarousel-wrapper a.jcarousel-control-prev,
+    .carousel .jcarousel-wrapper a.jcarousel-control-next {
+      position: absolute;
+      top: 161px;
+      width: 30px;
+      height: 117px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      text-decoration: none; }
+    .carousel .jcarousel-wrapper a.jcarousel-control-prev {
+      left: 0;
+      background: rgba(255, 255, 255, 0.9) url("../images/arrow-left.png") no-repeat 50% 50%; }
+    .carousel .jcarousel-wrapper a.jcarousel-control-next {
+      right: 0;
+      background: rgba(255, 255, 255, 0.9) url("../images/arrow-right.png") no-repeat 50% 50%; }
+    .carousel .jcarousel-wrapper .jcarousel-pagination {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 24px; }
+      .carousel .jcarousel-wrapper .jcarousel-pagination a {
+        text-decoration: none;
+        display: inline-block;
+        background: #867a76;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        margin-right: 20px; }
+        .carousel .jcarousel-wrapper .jcarousel-pagination a.active {
+          background-color: #fd926d; }
 
 .imageblock {
+  display: block;
   height: 340px;
   width: 970px;
   position: relative;
   margin: 40px auto; }
-  .imageblock .left {
+  .imageblock .left a {
+    display: block;
     background: url("../images/left.png");
     height: 340px;
     width: 484px;
@@ -272,23 +280,25 @@ header {
     border-right: 2px solid white; }
   .imageblock .right {
     float: right; }
-    .imageblock .right .top {
+    .imageblock .right .top a {
+      display: block;
       background: url("../images/top.png");
       height: 169px;
       width: 484px;
       vertical-align: top;
       border-bottom: 2px solid white; }
-    .imageblock .right .bottom-left {
+    .imageblock .right .bottom-left a {
+      display: block;
       background: url("../images/bottom-left.png");
       height: 169px;
       width: 241px;
       float: left; }
-    .imageblock .right .bottom-right {
+    .imageblock .right .bottom-right a {
       background: url("../images/bottom-right.png");
       height: 169px;
       width: 241px;
       float: right; }
-      .imageblock .right .bottom-right button {
+      .imageblock .right .bottom-right a button {
         background-color: #4fafa0;
         width: 98px;
         border: none;
@@ -300,6 +310,6 @@ header {
         line-height: 30px;
         margin-top: 122px;
         margin-left: 32px; }
-        .imageblock .right .bottom-right button i {
+        .imageblock .right .bottom-right a button i {
           font-size: 12px;
           padding-left: 9px; }

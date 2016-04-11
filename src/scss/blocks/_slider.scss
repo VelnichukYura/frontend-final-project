@@ -1,61 +1,69 @@
-.wrapper {
-
-  .jcarousel {
+.carousel {
+  height: 510px;
+  .jcarousel-wrapper {
     position: relative;
-    overflow: hidden;
-    height: 440px;
-    margin: 0 auto;
-    width: 1200px;
-    ul {
-      width: 20000em;
-      position: absolute;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      li {
-        float: left;
+    width: 100%;
+    .jcarousel {
+      position: relative;
+      overflow: hidden;
+      height: 440px;
+      width: 100%;
+      ul {
+        width: 20000em;
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          float: left;
+          img {
+            display: block;
+            width: 100%;
+            height: auto !important;
+          }
         }
       }
     }
 
-  .jcarousel-prev {
-    position: relative;
-    float: left;
-    a {
-      background-color:  rgba(255, 255, 255, 0.9);
-      position: relative;
+    a.jcarousel-control-prev,
+    a.jcarousel-control-next {
+      position: absolute;
+      top: 161px;
       width: 30px;
       height: 117px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
     }
-  }
 
-  .jcarousel-next {
-    position: relative;
-    float: right;
-    a {
-      background-color:  rgba(255, 255, 255, 0.9);
-      position: relative;
-      width: 30px;
-      height: 117px;
+    a.jcarousel-control-prev {
+      left: 0;
+      background: rgba(255, 255, 255, 0.9) url("../images/arrow-left.png") no-repeat 50% 50%;
     }
-  }
+
+    a.jcarousel-control-next {
+      right: 0;
+      background: rgba(255, 255, 255, 0.9) url("../images/arrow-right.png") no-repeat 50% 50%;
+    }
 
 
-
-  .jcarousel-pagination {
-    margin: 0 auto;
-    display: block;
+    .jcarousel-pagination {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 24px;
       a {
-        margin: 5px;
-        display: inline-block;
         text-decoration: none;
-        border-radius: 50%;
-        background-color:  #867a76;
+        display: inline-block;
+        background: #867a76;
         width: 10px;
         height: 10px;
-          &.active {
-            background-color:  #fd926d;
-          }
+        border-radius: 10px;
+        margin-right: 20px;
+        &.active {
+          background-color: #fd926d;
+        }
       }
     }
+  }
 }

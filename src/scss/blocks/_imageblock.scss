@@ -1,9 +1,11 @@
 .imageblock {
+  display: block;
   height: 340px;
   width: 970px;
   position: relative;
   margin: 40px auto;
-  .left {
+  .left a {
+    display: block;
     background: url("../images/left.png");
     height: 340px;
     width: 484px;
@@ -12,21 +14,23 @@
   }
   .right {
     float: right;
-    .top {
+    .top a {
+      display: block;
       background: url("../images/top.png");
       height: 169px;
       width: 484px;
       vertical-align: top;
       border-bottom: 2px solid white;
     }
-    .bottom-left {
+    .bottom-left a {
+      display: block;
       background: url("../images/bottom-left.png");
       height: 169px;
       width: 241px;
       float: left;
 
     }
-    .bottom-right {
+    .bottom-right a {
       background: url("../images/bottom-right.png");
       height: 169px;
       width: 241px;

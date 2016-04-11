@@ -19,6 +19,7 @@
   "dependencies": {
     "jquery": "^2.2.2",
     "font-awesome": "font-awsome#^4.5.0",
-    "jcarousel": "^0.3.4"
+    "jcarousel": "^0.3.4",
+    "jquery-ui": "^1.11.4"
   }
 }
