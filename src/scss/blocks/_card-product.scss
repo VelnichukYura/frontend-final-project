@@ -1,0 +1,77 @@
+/* -------- card-product -------- */
+
+.card-product {
+  position: relative;
+  display: inline-block;
+  background-color: #f7f7f7;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  &__link:hover .card-product__shop {
+    opacity: .9;
+  }
+
+  &__img {
+    //@include img-responsive;
+  }
+
+  &__name {
+    margin: 10px 0;
+    //font-size: $font-size-secondary;
+    text-transform: uppercase;  
+  }
+
+  &__price {
+    //font-size: $font-size-large;
+    margin-bottom: 10px;  
+  }
+
+  &__shop {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    margin-left: -55px;
+    padding-top: 17px;
+    border-radius: 50%;
+   // font-size: $font-size-base;
+    //background-color: $color-gray-darker;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity .5s;
+
+    .icon-shop {
+      font-size: 30px;
+    }
+  }
+  
+  &__shop-text {
+    display: block;
+    margin-top: 10px;
+  }
+
+  &:hover .card-product__shop {
+    opacity: .9;
+  }
+
+  &__sale {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    //font-size: $font-size-small;
+   // background-image: linear-gradient(135deg, $color-gray-darker 50%, #fff 50%);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+

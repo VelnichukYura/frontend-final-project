@@ -1,0 +1,23 @@
+.picture-blocks {
+  position: relative;
+  height: 400px;
+  top: 40px;
+  .main-width {
+    text-align: center;
+  }
+  a {
+    cursor: pointer;
+  }
+  .left-pic-set {
+    display: inline-block;
+  }
+  .right-pic-set {
+    display: inline-block;
+    .bottom-left-pic {
+      display: inline-block;
+    }
+    .bottom-right-pic {
+      display: inline-block;
+    }
+  }
+}

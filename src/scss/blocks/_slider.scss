@@ -1,0 +1,38 @@
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 1200px;
+  ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      background: url("./images/1.png");
+      width: 1200px;
+      height: 440px;
+      vertical-align: top;
+    }
+  }
+}
+
+.jcarousel-pagination {
+  display: inline-block;
+  margin: 0 auto;
+  a {
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color:  #867a76;
+    width: 10px;
+    height: 10px;
+    &.active {
+      background-color:  #fd926d;
+    }
+  }
+
+}
+

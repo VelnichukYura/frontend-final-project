@@ -3,7 +3,7 @@
   <head>
     <title>My site</title>
     <link href="./css/style.css" rel="stylesheet">
-    <link href="./libraries/bxslider/jquery.bxslider.css" rel="stylesheet">
+    <link href="./libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -46,34 +46,45 @@
       </section>
       <div class="clearfix"></div>
       <section class="full-width">
-        <ul class="bxslider"></ul>
-        <li><img src="./images/img1.png"></li>
-        <li><img src="./images/img1.png"></li>
-        <li><img src="./images/img1.png"></li>
-        <script>$('.bxslider').bxSlider()</script>
-      </section>
-      <div class="clearfix"></div>
-      <section class="full-width email_section">
-        <div class="main-width">
-          <div class="email_left"><span>Stay updated</span>
-            <input type="email" placeholder="Your email adress">
-          </div>
-          <div class="email_right"><span>Find us here</span>
+        <section class="full-width home-carousel">
+          <div class="jcarousel jcarousel-wrapper">
             <ul>
-              <li><a href="#"><img src="./images/facebook.png"></a></li>
-              <li><a href="#"><img src="./images/twitter.png"></a></li>
-              <li><a href="#"><img src="./images/path.png"></a></li>
+              <li><a href="#"><img src="./images/slider-2.png"></a></li>
+              <li><a href="#"><img src="./images/slider-2.png"></a></li>
+              <li><a href="#"><img src="./images/slider-2.png"></a></li>
             </ul>
-          </div>
-        </div>
+          </div><a href="#" data-jcarouselcontrol="true" class="jcarousel-control-prev"><</a><a href="#" data-jcarouselcontrol="true" class="jcarousel-control-next">></a>
+          <p data-jcarouselcontrol="true" class="jcarousel-pagination"><a href="#"></a><a href="#"></a><a href="#"></a></p>
+        </section>
       </section>
+      <div class="clearfix">
+        <section class="full-width subscription-block">
+          <div class="main-width">
+            <div class="subscription-left">
+              <form role="form" method="POST" action="">
+                <label>Stay updated
+                  <input type="text" placeholder="Your email address" required="">
+                </label>
+                <button><i class="fa fa-plus"></i></button>
+              </form>
+            </div>
+            <div class="subscription-right"><span>Find us here</span><a href="#" target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i class="fa fa-twitter"></i></a><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></div>
+          </div>
+        </section>
+      </div>
       <div class="clearfix"></div>
-      <section class="offers_section">
-        <div class="left_offers"><a href="#"><img src="./images/lr1.png"></a></div>
-        <div class="right_offers"><a href="#"><img src="./images/lr2.png"></a><a href="#"><img src="./images/lr3.png"></a><a href="#"><img src="./images/lr4.png"></a></div>
+      <section class="picture-blocks">
+        <div class="main-width"><a href="#">
+            <div class="left-pic-set"><img src="./images/left-pic.jpg" alt=""></div></a>
+          <div class="right-pic-set"><a href="#">
+              <div class="top-pic"><img src="./images/right-top-pic.jpg" alt=""></div></a><a href="#">
+              <div class="bottom-left-pic"><img src="./images/bottom-left-pic.jpg" alt=""></div></a><a href="#">
+              <div class="bottom-right-pic"><img src="./images/bottom-right-pic.jpg" alt=""></div></a></div>
+        </div>
       </section>
     </main>
     <script src="./libraries/jquery/dist/jquery.min.js"></script>
-    <script src="./libraries/bxslider/jquery.bxSlider.min.js"></script>
+    <script src="./libraries/jcarousel/dist/jquery.jcarousel.min.js"></script>
+    <script src="./slider.js"></script>
   </body>
 </html>

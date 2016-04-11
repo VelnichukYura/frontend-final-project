@@ -1,83 +1,101 @@
 extends ./layouts/main.jade
 block content
-  main
-    section.full-width.account-section
-      div.main-width
-        div.account-left
-          span custom care:
-          | 888-23-4567
-        div.account-right
-          div.search
-            input(type='text')
-          div.account-page-link
-            a(href='#') my account
-          div.currency-switcher
-            select
-              option $ US
-              option $ US
-              option $ US
-    div.clearfix
-    section.full-width.header-section
-      header.main-width
-        div.logo
-          a(href='/')
-            img(src='images/logo.png')
-        nav.main-menu
-          ul
-            li
-              a(href='#') new
-            li
-              a(href='#') designers
-            li
-              a(href='#') women
-            li
-              a(href='#') men
-            li
-              a(href='#') clearence
-        div.cart
-          div.cart-header
-            | Your cart
-            span.triangle-down
-          div.cart-total
-            span 0 items  |  $ 0
-    div.clearfix
-    section.full-width
-      ul.bxslider
-      li
-        img(src='./images/img1.png')
-      li
-        img(src='./images/img1.png')
-      li
-        img(src='./images/img1.png')
-      script $('.bxslider').bxSlider()
-    div.clearfix
-    section.full-width.email_section
-      div.main-width
-        div.email_left
-          span Stay updated
-          input(type='email' placeholder='Your email adress')
-        div.email_right
-          span Find us here
-          ul
-            li
-              a(href='#')
-                img(src='./images/facebook.png')
-            li
-              a(href='#')
-                img(src='./images/twitter.png')
+    main
+        section.full-width.account-section
+            div.main-width
+                div.account-left
+                    span custom care:
+                    | 888-23-4567
+                div.account-right
+                    div.search
+                        input(type='text')
+                    div.account-page-link
+                        a(href='#') my account
+                    div.currency-switcher
+                        select
+                            option $ US
+                            option $ US
+                            option $ US
+        div.clearfix
+        section.full-width.header-section
+            header.main-width
+                div.logo
+                    a(href='/')
+                        img(src='images/logo.png')
+                nav.main-menu
+                    ul
+                        li
+                            a(href='#') new
+                        li
+                            a(href='#') designers
+                        li
+                            a(href='#') women
+                        li
+                            a(href='#') men
+                        li
+                            a(href='#') clearence
+                div.cart
+                    div.cart-header
+                        | Your cart
+                        span.triangle-down
+                    div.cart-total
+                        span 0 items  |  $ 0
+        div.clearfix
+        section.full-width
+            section.full-width.home-carousel
+                div.jcarousel.jcarousel-wrapper
+                    ul
+                        li
+                            a(href="#")
+                                img(src='./images/slider-2.png')
+                        li
+                            a(href="#")
+                                img(src='./images/slider-2.png')
+                        li
+                            a(href="#")
+                                img(src='./images/slider-2.png')
+                a.jcarousel-control-prev(href="#" data-jcarouselcontrol="true") <
+                a.jcarousel-control-next(href="#" data-jcarouselcontrol="true") >
+                p.jcarousel-pagination(data-jcarouselcontrol="true")
+                    a(href="#")
+                    a(href="#")
+                    a(href="#")
 
-            li
-              a(href='#')
-                img(src='./images/path.png')
-    div.clearfix
-    section.offers_section
-      div.left_offers
-        a(href='#')
-          img(src='./images/lr1.png')
-      div.right_offers
-        a(href='#')
-          img(src='./images/lr2.png')
-        a(href='#')
-          img(src='./images/lr3.png')
-        a(href='#')
-          img(src='./images/lr4.png')
+
+        div.clearfix
+            section.full-width.subscription-block
+                div.main-width
+                    div.subscription-left
+                        form(role='form', method='POST', action='')
+                            label
+                                | Stay updated
+                                input(type='text', placeholder='Your email address', required='')
+                            button
+                                i.fa.fa-plus
+                    div.subscription-right
+                        span Find us here
+                        a(href='#', target='_blank')
+                            i.fa.fa-facebook
+                        a(href='#', target='_blank')
+                            i.fa.fa-twitter
+                        a(href='#', target='_blank')
+                            i.fa.fa-pinterest
+        div.clearfix
+        section.picture-blocks
+            .main-width
+                a(href="#")
+                    div.left-pic-set
+                        img(src='./images/left-pic.jpg', alt='')
+                div.right-pic-set
+                    a(href="#")
+                        div.top-pic
+                            img(src='./images/right-top-pic.jpg', alt='')
+                    a(href="#")
+                        div.bottom-left-pic
+                            img(src='./images/bottom-left-pic.jpg', alt='')
+                    a(href="#")
+                        div.bottom-right-pic
+                            img(src='./images/bottom-right-pic.jpg', alt='')
+
+
+
