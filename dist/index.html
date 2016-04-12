@@ -2,8 +2,12 @@
 <html>
   <head>
     <title>My site</title>
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- bower:css-->
+    <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.css">
+    <!-- endinject-->
+    <!-- inject:css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject-->
   </head>
   <body>
     <main>
@@ -81,6 +85,10 @@
           </div>
           <div class="subscription-right"><span>Find us here</span><a href="#" target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i class="fa fa-twitter"></i></a><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></div>
         </div>
+      </section>
+      <div class="clearfix"></div>
+      <section class="full-width home-banners">
+        <div class="main-width"></div>
       </section>
       <div class="clearfix"></div>
       <section id="tabs" class="full-width products-blocks-nav">
@@ -539,9 +547,13 @@
         </section>
       </section>
     </main>
-    <script src="/libraries/jquery/dist/jquery.min.js"></script>
-    <script src="/libraries/jquery-ui/jquery-ui.min.js"></script>
-    <script src="/libraries/jcarousel/dist/jquery.jcarousel.min.js"></script>
-    <script src="/js/common.js"></script>
+    <!-- bower:js-->
+    <script src="libraries/jquery/dist/jquery.js"></script>
+    <script src="libraries/jquery-ui/jquery-ui.js"></script>
+    <script src="libraries/jcarousel/dist/jquery.jcarousel.js"></script>
+    <!-- endinject-->
+    <!-- inject:js-->
+    <script src="js/common.js"></script>
+    <!-- endinject-->
   </body>
 </html>

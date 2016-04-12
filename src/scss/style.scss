@@ -1,14 +1,14 @@
-@import "_reset";
-@import "_breakpoints";
-@import "_colors";
-@import "_headings";
-@import "_main";
+@import "elements/reset";
+@import "elements/breakpoints";
+@import "elements/colors";
+@import "elements/headings";
+@import "elements/main";
 
-@import "blocks/_account";
-@import "blocks/_header";
-@import "blocks/_subscription";
-@import "blocks/_carousel";
-@import "blocks/_products_blocks";
-@import "blocks/_products_carousel";
-@import "blocks/_products";
-@import "blocks/_home-label";
+@import "blocks/account";
+@import "blocks/header";
+@import "blocks/subscription";
+@import "blocks/carousel";
+@import "blocks/products_blocks";
+@import "blocks/products_carousel";
+@import "blocks/products";
+@import "blocks/home-label";

@@ -20,5 +20,16 @@
     "jcarousel": "^0.3.4",
     "font-awesome": "^4.5.0",
     "jquery-ui": "^1.11.4"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css",
+        "fonts/fontawesome-webfont.eot",
+        "fonts/fontawesome-webfont.woff",
+        "fonts/fontawesome-webfont.ttf",
+        "fonts/fontawesome-webfont.svg"
+      ]
+    }
   }
 }

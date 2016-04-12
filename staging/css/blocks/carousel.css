@@ -1,0 +1,83 @@
+.home-carousel {
+  height: 510px;
+  /** Carousel Controls **/
+  /** Carousel Pagination **/ }
+  .home-carousel .jcarousel-full {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 440px; }
+    .home-carousel .jcarousel-full ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 440px; }
+      .home-carousel .jcarousel-full ul li {
+        float: left;
+        height: 440px;
+        box-sizing: border-box; }
+        .home-carousel .jcarousel-full ul li .slide {
+          display: block;
+          max-width: 100%;
+          position: relative;
+          height: 440px; }
+          .home-carousel .jcarousel-full ul li .slide .image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 440px;
+            z-index: 1; }
+            .home-carousel .jcarousel-full ul li .slide .image a {
+              display: block;
+              width: 100%;
+              height: 440px;
+              text-decoration: none; }
+              .home-carousel .jcarousel-full ul li .slide .image a img {
+                width: 100%; }
+          .home-carousel .jcarousel-full ul li .slide .main-width {
+            position: relative;
+            z-index: 100; }
+            .home-carousel .jcarousel-full ul li .slide .main-width a img {
+              margin-top: 30px; }
+  .home-carousel .jcarousel-control-prev,
+  .home-carousel .jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 117px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    margin-top: -100px;
+    z-index: 200; }
+  .home-carousel .jcarousel-control-prev {
+    left: 0;
+    background: rgba(255, 255, 255, 0.9) url("../images/arrow-left.png") no-repeat 50% 50%; }
+  .home-carousel .jcarousel-control-next {
+    right: 0;
+    background: rgba(255, 255, 255, 0.9) url("../images/arrow-right.png") no-repeat 50% 50%; }
+  .home-carousel .jcarousel-control-prev:hover span,
+  .home-carousel .jcarousel-control-next:hover span {
+    display: block; }
+  .home-carousel .jcarousel-control-prev.inactive,
+  .home-carousel .jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default; }
+  .home-carousel .jcarousel-pagination {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 24px; }
+  .home-carousel .jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    background: #867a76;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 20px; }
+  .home-carousel .jcarousel-pagination a.active {
+    background: #fd926d; }

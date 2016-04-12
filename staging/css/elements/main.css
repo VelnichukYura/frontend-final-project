@@ -1,0 +1,12 @@
+main .full-width {
+  width: 100%; }
+
+main .main-width {
+  width: 1000px;
+  margin: 0 auto; }
+
+main .triangle-down {
+  display: inline-block;
+  background: url("/images/triangle-down.png") no-repeat center center;
+  width: 7px;
+  height: 4px; }
