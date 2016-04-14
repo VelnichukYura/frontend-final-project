@@ -1,4 +1,5 @@
-extends ./layouts/main.jade
+extends layouts/main.jade
+include layouts/mixin
 block content
     main
         section.full-width.account
@@ -42,26 +43,20 @@ block content
                         span 0 items  |  $ 0
         div.clearfix
         section.full-width.slider
-            div.jcarousel
+            div.jcarousel-full
                 ul
                     li
-                        img(src='images/slider.png')
+                        +slide('./images/slider-1.png', './images/slider-1-1.png')
                     li
-                        img(src='images/slider.png')
+                        +slide('./images/slider-1.png', './images/slider-1-1.png')
                     li
-                        img(src='images/slider.png')
-                    li
-                        img(src='images/slider.png')
-                    li
-                        img(src='images/slider.png')
-           a.jcarousel-control-prev(href="#" data-jcarouselcontrol="true")
-           a.jcarousel-control-prev(href="#" data-jcarouselcontrol="true")
-           p.jcarousel-pagination
-               a(href="#")
-               a(href="#")
-               a(href="#")
-               a(href="#")
-               a(href="#")
+                        +slide('./images/slider-1.png', './images/slider-1-1.png')
+            a.jcarousel-control-prev(href="#" data-jcarouselcontrol="true")
+            a.jcarousel-control-next(href="#" data-jcarouselcontrol="true")
+            p.jcarousel-pagination(data-jcarouselcontrol="true")
+                a(href="#")
+                a(href="#")
+                a(href="#")
         div.clearfix
         section.full-width.subscription
             div.main-width
@@ -94,4 +89,190 @@ block content
                         button shop now
                             i.fa.fa-caret-right
         div.clearfix
-        
+        section.full-width.products-blocks-nav#tabs
+            div.main-width
+                div
+                    ul
+                        li.ui-state-active
+                            a(href='#tabs-hot') what’s hot?
+                        li
+                            a(href='#tabs-designers') designers
+                        li
+                            a(href='#tabs-featured') featured
+                        li
+                            a(href='#tabs-latest') latest
+            section.full-width.products-blocks
+                div#tabs-hot
+                    div.products-jcarousel-wrapper
+                        div.products-jcarousel#products-hot
+                            ul
+                                li
+                                    +product('./images/product_1.png', 'MIMOSA LACE DRESS', '76.95', './images/sale.png')
+                                li
+                                    +product('./images/product_2.png', 'FEEL TANK', '59.95', false)
+                                li
+                                    +product('./images/product_3.png', 'HOT SHORTS', '35.95', './images/sale.png')
+                                li
+                                    +product('./images/product_4.png', 'PETROL SWEATER', '21.50', './images/sale.png')
+                                li
+                                    +product('./images/product_1.png', 'MIMOSA LACE DRESS', '76.95', './images/sale.png')
+                                li
+                                    +product('./images/product_2.png', 'FEEL TANK', '59.95', false)
+                                li
+                                    +product('./images/product_3.png', 'HOT SHORTS', '35.95', './images/sale.png')
+                                li
+                                    +product('./images/product_4.png', 'PETROL SWEATER', '21.50', './images/sale.png')
+                                li
+                                    +product('./images/product_1.png', 'MIMOSA LACE DRESS', '76.95', './images/sale.png')
+                                li
+                                    +product('./images/product_2.png', 'FEEL TANK', '59.95', false)
+                                li
+                                    +product('./images/product_3.png', 'HOT SHORTS', '35.95', './images/sale.png')
+                                li
+                                    +product('./images/product_4.png', 'PETROL SWEATER', '21.50', './images/sale.png')
+                div#tabs-designers
+                    div.products-jcarousel-wrapper
+                        div.products-jcarousel#products-designers
+                            ul
+                                li
+                                    +product('./images/product_1.png', 'MIMOSA LACE DRESS', '76.95', true)
+                                li
+                                    +product('./images/product_2.png', 'FEEL TANK', '59.95', false)
+                                li
+                                    +product('./images/product_3.png', 'HOT SHORTS', '35.95',true)
+                                li
+                                    +product('./images/product_4.png', 'PETROL SWEATER', '21.50',true)
+                div#tabs-featured
+                    div.products-jcarousel-wrapper
+                        div.products-jcarousel#products-featured
+                            ul
+                                li
+                                    +product('./images/product_1.png', 'MIMOSA LACE DRESS', '76.95', true)
+                                li
+                                    +product('./images/product_2.png', 'FEEL TANK', '59.95', false)
+                                li
+                                    +product('./images/product_3.png', 'HOT SHORTS', '35.95',true)
+                                li
+                                    +product('./images/product_4.png', 'PETROL SWEATER', '21.50',true)
+                div#tabs-latest
+                    div.products-jcarousel-wrapper
+                        div.products-jcarousel#products-latest
+                            ul
+                                li
+                                    +product('./images/product_1.png', 'MIMOSA LACE DRESS', '76.95', true)
+                                li
+                                    +product('./images/product_2.png', 'FEEL TANK', '59.95', false)
+                                li
+                                    +product('./images/product_3.png', 'HOT SHORTS', '35.95',true)
+                                li
+                                    +product('./images/product_4.png', 'PETROL SWEATER', '21.50',true)
+            div.clearfix
+            section.full-width.label-sale
+                div.main-width
+                    fieldset
+                        legend(align='center')
+                            img(src='./images/label_sale.png')
+            div.clearfix
+            section.full-width.clearance-sale
+                div.main-width
+                    ul
+                            li
+                                +product('./images/product_1.png', 'MIMOSA LACE DRESS', '76.95',false)
+                            li
+                                +product('./images/product_2.png', 'FEEL TANK', '59.95', './images/sale.png')
+                            li
+                                +product('./images/product_3.png', 'HOT SHORTS', '35.95',false)
+                            li
+                                +product('./images/product_4.png', 'PETROL SWEATER', '21.50','./images/sale.png')
+            div.clearfix
+            section.full-width.brands
+                fieldset
+                    legend(align='center')
+                        h2 favourite brands
+                    ul
+                        li
+                            img(src='images/brands_addict.png')
+                        li
+                            img(src='images/brands_abandonship.png').
+                        li
+                            img(src='images/brands_adidas.png')
+                        li
+                            img(src='images/brands_boy.png')
+                        li
+                            img(src='images/brands_converse.png')
+                        li
+                            img(src='images/brands_calvin_klein.png')
+                        li
+                            img(src='images/brands_edwin.png')
+                        li
+                            img(src='images/brands_grenson.png')
+            div.clearfix
+            section.full-width.about_shop
+                h2 About LookShop
+                h3 This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+            div.clearfix
+            section.full-width.accept_card
+                h2 We accept
+                    img(src='images/accept.png')
+            div.clearfix
+            section.full-width.info
+                div.customer_service
+                    h2 Customer Service
+                    a(href="#") Contact
+                    a(href="#") FAQ
+                    a(href="#") Terms of payment
+                    a(href="#") Terms of sale
+                    a(href="#") Returns and Refunds
+                    a(href="#") Delivery terms and conditions
+                div.information
+                    h2 Information
+                    a(href="#") Affiliate
+                    a(href="#") Cookies
+                    a(href="#") How to Shop
+                    a(href="#") About Nelly
+                    a(href="#") Investor relations
+                div.campaigns
+                    h2 Campaigns
+                    a(href="#") Evening dresses
+                    a(href="#") Makeup
+                    a(href="#") Fashion forward
+                    a(href="#") training clothes
+                    a(href="#") Special Occasion Dresses
+                div.stores
+                    h2 Stores
+                    a(href="#") Paris
+                    a(href="#") New York
+                    a(href="#") London
+                    a(href="#") Madrid
+                    a(href="#") Tokio
+                div.social
+                    h2 Social
+                    a(href="https://twitter.com/?lang=ru" target='_blank')
+                       i.fa.fa-twitter
+                    a(href="https://ru.pinterest.com/" target='_blank')
+                      i.fa.fa-pinterest
+                    a(href="https://www.facebook.com/" target='_blank')
+                      i.fa.fa-facebook
+                    br
+                    a(href="https://plus.google.com/" target='_blank')
+                       i.fa.fa-google-plus
+                    a(href="https://www.tumblr.com/" target='_blank')
+                       i.fa.fa-tumblr
+                    a(href="https://vimeo.com/" target='_blank')
+                        i.fa.fa-vimeo
+                div.secured
+                    img(src="./images/secured.png")
+            div.clearfix
+            section.full-width.info_next
+                div.main-width
+                    div.left
+                        a(href='#') Privacy & Cookies
+                        a(href='#') Terms & Conditions
+                        a(href='#') Accessibility
+                        a(href='#') Store Directory
+                        a(href='#') About us
+                    div.right
+                        p @LookShop.com
+                            All Rights Reserved
+            div.clearfix
+

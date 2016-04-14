@@ -1,0 +1,29 @@
+.brands {
+  fieldset {
+    height: 110px;
+    border: 1px solid #B2B2B2;
+
+    h2 {
+      padding:0 20px 0 20px;
+      text-transform: uppercase;
+      font-family: Arial;
+      color: #414141;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.15px;
+      text-align: center;
+    }
+    ul {
+      margin: 20px 0 20px 0;
+      list-style: none;
+      padding-left: 80px;
+      li {
+        float: left;
+        & + li {
+          margin-left: 77px;
+        }
+      }
+    }
+  }
+}
+

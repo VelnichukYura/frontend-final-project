@@ -5,9 +5,6 @@
 .clearfix {
   clear: both; }
 
-* {
-  font-family: Arial,"Helvetica Neue",sans-serif; }
-
 main .full-width {
   width: 100%; }
 
@@ -366,3 +363,531 @@ header {
         .wallpapers .right .bottom-right button i {
           font-size: 12px;
           padding-left: 9px; }
+
+.products-blocks-nav div.main-width {
+  height: 47px; }
+  .products-blocks-nav div.main-width ul {
+    list-style: none; }
+    .products-blocks-nav div.main-width ul li {
+      float: left;
+      display: block;
+      padding: 0 20px 0 20px;
+      height: 47px;
+      line-height: 47px;
+      text-align: center; }
+      .products-blocks-nav div.main-width ul li a {
+        text-decoration: none;
+        font-family: Arial;
+        color: #555555;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        display: block;
+        height: 47px;
+        line-height: 47px; }
+      .products-blocks-nav div.main-width ul li.ui-state-active {
+        background: #fd926d; }
+        .products-blocks-nav div.main-width ul li.ui-state-active a {
+          font-family: Arial;
+          color: white;
+          font-size: 15px;
+          font-weight: 400;
+          letter-spacing: -0.15px; }
+
+.products-blocks-nav .products-blocks {
+  text-align: center; }
+
+.products-jcarousel-wrapper {
+  margin: 0px auto;
+  position: relative;
+  background: #fd926d;
+  padding: 20px 0 20px 0; }
+
+/** Carousel **/
+.products-jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+
+.products-jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.products-jcarousel li {
+  width: 240px;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.products-jcarousel img {
+  display: block;
+  max-width: 100%;
+  height: auto !important; }
+
+/** Carousel Controls **/
+.products-jcarousel-control-prev,
+.products-jcarousel-control-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #4E443C;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 1px #000;
+  font: 24px/27px Arial, sans-serif;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 4px #F0EFE7;
+  -moz-box-shadow: 0 0 4px #F0EFE7;
+  box-shadow: 0 0 4px #F0EFE7; }
+
+.products-jcarousel-control-prev {
+  left: 15px; }
+
+.products-jcarousel-control-next {
+  right: 15px; }
+
+.product-wrapper {
+  width: 220px;
+  height: 395px;
+  padding: 10px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+  .product-wrapper .product {
+    position: relative;
+    background: #f7f7f7; }
+    .product-wrapper .product .link {
+      opacity: 0;
+      position: absolute;
+      width: 134px;
+      height: 134px;
+      border-radius: 134px;
+      left: 50%;
+      top: 100px;
+      margin-left: -67px;
+      background-color: #3d3d3d;
+      background-image: url("../images/link_bye.png");
+      background-repeat: no-repeat;
+      background-position: center 40%;
+      z-index: 1000;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+      .product-wrapper .product .link a {
+        display: block;
+        width: 100%;
+        border-radius: 134px;
+        height: 100%;
+        font-family: Arial;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.12px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 165px; }
+    .product-wrapper .product .image {
+      position: relative;
+      height: 294px;
+      overflow: hidden; }
+      .product-wrapper .product .image img {
+        width: 100%;
+        height: 294px; }
+      .product-wrapper .product .image .label {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 0; }
+    .product-wrapper .product .title h3 a {
+      font-family: Arial;
+      color: #373737;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.12px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 8px 0 8px 0;
+      text-decoration: none;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+    .product-wrapper .product .price {
+      font-family: Arial;
+      color: #373737;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: -0.22px;
+      text-align: center; }
+    .product-wrapper .product .cart {
+      text-align: center; }
+      .product-wrapper .product .cart button {
+        width: 120px;
+        color: white;
+        height: 27px;
+        background-color: #fd926d;
+        cursor: pointer;
+        border: none;
+        border-bottom: 2px solid #dd6b44;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 27px;
+        margin: 10px 0 10px 0; }
+        .product-wrapper .product .cart button i {
+          margin-left: 5px; }
+  .product-wrapper:hover {
+    padding: 0;
+    width: 240px;
+    height: 415px; }
+    .product-wrapper:hover .product {
+      height: 100%; }
+      .product-wrapper:hover .product .link {
+        opacity: 1; }
+      .product-wrapper:hover .product .title h3 a {
+        font-size: 14px; }
+
+.label-sale {
+  height: 180px;
+  margin: 20px 0 20px 0; }
+  .label-sale fieldset {
+    border: none;
+    border-top: 1px solid #B2B2B2; }
+    .label-sale fieldset legend {
+      padding: 0 20px 0 20px; }
+
+.clearance-sale {
+  height: 480px; }
+  .clearance-sale .main-width {
+    height: 480px;
+    width: 1100px; }
+    .clearance-sale .main-width .product-wrapper {
+      width: 220px;
+      height: 395px;
+      padding: 10px;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+      .clearance-sale .main-width .product-wrapper .product {
+        position: relative;
+        background: #f7f7f7; }
+        .clearance-sale .main-width .product-wrapper .product .link {
+          opacity: 0;
+          position: absolute;
+          width: 134px;
+          height: 134px;
+          border-radius: 134px;
+          left: 50%;
+          top: 100px;
+          margin-left: -67px;
+          background-color: #3d3d3d;
+          background-image: url("../images/link_bye.png");
+          background-repeat: no-repeat;
+          background-position: center 40%;
+          z-index: 1000;
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -o-transition: all 1s ease; }
+          .clearance-sale .main-width .product-wrapper .product .link a {
+            display: block;
+            width: 100%;
+            border-radius: 134px;
+            height: 100%;
+            font-family: Arial;
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: -0.12px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            line-height: 165px; }
+        .clearance-sale .main-width .product-wrapper .product .image {
+          position: relative;
+          height: 294px;
+          overflow: hidden; }
+          .clearance-sale .main-width .product-wrapper .product .image img {
+            width: 100%;
+            height: 294px; }
+          .clearance-sale .main-width .product-wrapper .product .image .label {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 0;
+            top: 0; }
+        .clearance-sale .main-width .product-wrapper .product .title h3 a {
+          font-family: Arial;
+          color: #373737;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: -0.12px;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 8px 0 8px 0;
+          text-decoration: none;
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          -moz-transition: all 1s ease;
+          -o-transition: all 1s ease; }
+        .clearance-sale .main-width .product-wrapper .product .price {
+          font-family: Arial;
+          color: #373737;
+          font-size: 22px;
+          font-weight: 400;
+          letter-spacing: -0.22px;
+          text-align: center; }
+        .clearance-sale .main-width .product-wrapper .product .cart {
+          text-align: center; }
+          .clearance-sale .main-width .product-wrapper .product .cart button {
+            width: 120px;
+            color: white;
+            height: 27px;
+            background-color: #fd926d;
+            cursor: pointer;
+            border: none;
+            border-bottom: 2px solid #dd6b44;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 27px;
+            margin: 10px 0 10px 0; }
+            .clearance-sale .main-width .product-wrapper .product .cart button i {
+              margin-left: 5px; }
+      .clearance-sale .main-width .product-wrapper:hover {
+        padding: 0;
+        width: 240px;
+        height: 415px; }
+        .clearance-sale .main-width .product-wrapper:hover .product {
+          height: 100%; }
+          .clearance-sale .main-width .product-wrapper:hover .product .link {
+            opacity: 1; }
+          .clearance-sale .main-width .product-wrapper:hover .product .title h3 a {
+            font-size: 14px; }
+    .clearance-sale .main-width ul li {
+      float: left; }
+      .clearance-sale .main-width ul li + li {
+        margin-left: 250px; }
+
+.brands fieldset {
+  height: 110px;
+  border: 1px solid #B2B2B2; }
+  .brands fieldset h2 {
+    padding: 0 20px 0 20px;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: #414141;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.15px;
+    text-align: center; }
+  .brands fieldset ul {
+    margin: 20px 0 20px 0;
+    list-style: none;
+    padding-left: 80px; }
+    .brands fieldset ul li {
+      float: left; }
+      .brands fieldset ul li + li {
+        margin-left: 77px; }
+
+.about_shop {
+  height: 150px; }
+  .about_shop h2 {
+    margin-top: 20px;
+    font-family: Arial;
+    color: #414141;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+    text-align: center; }
+  .about_shop h3 {
+    height: 70px;
+    width: 971px;
+    margin: 20px auto;
+    font-family: Arial;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center; }
+
+.accept_card {
+  background-color: #f7f7f7;
+  width: 1200px;
+  height: 58px;
+  line-height: 58px; }
+  .accept_card h2 {
+    font-family: Arial;
+    color: #414141;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.12px;
+    text-align: center; }
+  .accept_card img {
+    margin-left: 20px; }
+
+.info {
+  height: 185px;
+  background-color: #eaeaea;
+  position: relative; }
+  .info .customer_service {
+    width: 170px;
+    height: 128px;
+    position: absolute;
+    top: 30px;
+    left: 150px; }
+    .info .customer_service h2 {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.16px;
+      line-height: 20px;
+      text-align: left; }
+    .info .customer_service a {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      text-decoration: none;
+      display: block; }
+  .info .information {
+    width: 100px;
+    height: 110px;
+    position: absolute;
+    top: 30px;
+    left: 385px; }
+    .info .information h2 {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.16px;
+      line-height: 20px;
+      text-align: left; }
+    .info .information a {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      text-decoration: none;
+      display: block; }
+  .info .campaigns {
+    width: 115px;
+    height: 126px;
+    position: absolute;
+    top: 30px;
+    left: 585px; }
+    .info .campaigns h2 {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.16px;
+      line-height: 20px;
+      text-align: left; }
+    .info .campaigns a {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      text-decoration: none;
+      display: block; }
+  .info .stores {
+    width: 60px;
+    height: 109px;
+    position: absolute;
+    top: 30px;
+    left: 780px; }
+    .info .stores h2 {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.16px;
+      line-height: 20px;
+      text-align: left; }
+    .info .stores a {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      text-decoration: none;
+      display: block; }
+  .info .social {
+    width: 145px;
+    height: 115px;
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 290px; }
+    .info .social h2 {
+      font-family: Arial;
+      color: #544e4d;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.16px;
+      line-height: 20px;
+      text-align: left; }
+    .info .social i {
+      text-decoration: none;
+      border: 1px solid #4A4A49;
+      border-radius: 50%;
+      color: white;
+      width: 35px;
+      height: 34px;
+      text-align: center;
+      line-height: 35px;
+      margin: 10px 10px 0 0;
+      background: #4A4A49;
+      display: inline-block; }
+  .info .secured {
+    float: right;
+    position: absolute;
+    top: 40px;
+    right: 150px; }
+
+.info_next {
+  background-color: #000000;
+  height: 74px;
+  line-height: 74px; }
+  .info_next .left {
+    float: left; }
+    .info_next .left a {
+      font-family: Arial;
+      text-decoration: none;
+      color: #8d8d8d;
+      font-size: 11px;
+      font-weight: 400;
+      text-align: left;
+      margin-right: 10px;
+      border-right: 1px solid #8d8d8d;
+      padding-right: 10px; }
+  .info_next .right {
+    font-family: Arial;
+    float: right;
+    color: #8d8d8d;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: right; }

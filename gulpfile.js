@@ -63,26 +63,20 @@ gulp.task('watcher', function () {
 });
 
 
+
 gulp.task('serve', ['sass', 'jade'], function () {
 
     browserSync.init({
         server: "./dist"
     });
-
+    gulp.watch("src/scss/**/*.scss", ['staging:sass']);
+    gulp.watch("src/jade/**/*.jade", ['staging:jade-watch']);
+    gulp.watch("src/img/*.*", ['staging:images-watch']);
+    gulp.watch("src/ts/*.ts", ['staging:ts-watch']);
+    gulp.watch("dist/**/*.js").on('change', browserSync.reload);
 });
-
-gulp.task('start:client', ['start:server', 'sass', 'jade'], function () {
-    openURL('http://localhost:9001');
-});
-
-gulp.task('start:server', function() {
-    $.connect.server({
-        root: ['dist'],
-        livereload: true,
-        port: 9001
-    });
-});
+gulp.task('default', ['serve']);
 
 
-gulp.task('default', ['watch']);
+
 
