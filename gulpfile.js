@@ -3,13 +3,14 @@ var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var git = require('gulp-git');
 var browserSync = require('browser-sync').create();
-var openURL = require('open');
-var $ = require('gulp-load-plugins')();
+var imageop = require('gulp-image-optimization');
+
 
 gulp.task('sass', function () {
     return gulp.src("src/scss/style.scss")
         .pipe(sass())
-        .pipe(gulp.dest("dist/css"));
+        .pipe(gulp.dest("dist/css"))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('jade', function () {
@@ -17,7 +18,16 @@ gulp.task('jade', function () {
         .pipe(jade({
             pretty: true
         }))
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./dist/'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('images', function(cb) {
+    gulp.src(['src/img/*.png','src/img/*.jpg','src/img/*.gif','src/img/*.jpeg']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('dist/images')).on('end', cb).on('error', cb);
 });
 
 gulp.task('commit', function () {
@@ -52,26 +62,23 @@ gulp.task('watcher', function () {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
 });
-gulp.task('start:client', ['start:server', 'sass', 'jade'], function () {
-    openURL('http://localhost:9001');
-});
-
-gulp.task('start:server', function() {
-    $.connect.server({
-        root: ['dist'],
-        livereload: true,
-        // Change this to '0.0.0.0' to access the server from outside.
-        port: 9001
-    });
-});
 
 // Static Server + watching scss/jade files
 gulp.task('serve', ['sass', 'jade'], function () {
 
     browserSync.init({
-        server: "./dist"
+        server: "./dist",
+        browser: ["firefox"]
     });
+
+    gulp.watch("src/scss/**/*.scss", ['sass']);
+    gulp.watch("src/jade/**/*.jade", ['jade']);
+    gulp.watch("src/img/*.*", ['images']);
+    gulp.watch("dist/**/*.js").on('change', browserSync.reload);
+    gulp.watch("dist/*.html").on('change', browserSync.reload);
+    gulp.watch("dist/css/*.css").on('change', browserSync.reload);
+    gulp.watch("dist/images/*.*").on('change', browserSync.reload);
 
 });
 
-gulp.task('default', ['watcher']);
+gulp.task('default', ['serve']);

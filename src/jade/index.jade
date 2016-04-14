@@ -1,4 +1,5 @@
 extends ./layouts/main.jade
+include ./layouts/mixins
 block content
   main
     section.top-section.full-width
@@ -90,3 +91,193 @@ block content
             a(href="#" target="_blank")
           div.marketing-right-bottom-right
             a(href="#" target="_blank")
+    div.clearfix
+    section.full-width.product-nav-section#tabs
+      div.main-width
+        div
+          ul
+            li
+              a(href="#tabs-1") what’s hot?
+            li
+              a(href="#tabs-2") designers
+            li
+              a(href="#features") featured
+            li
+              a(href="#latest") latest
+      section.full-width.product-nav-section
+        div#tabs-1
+          div.jcarousel-wrapper
+            div.jcarousel
+              ul
+                li
+                  +product("./images/product-1.png", "Product 1", "45", "./images/label.png" )
+                li
+                  +product("./images/product-2.png", "Product 2", "45", "./images/label.png" )
+                li
+                  +product("./images/product-3.png", "Product 3", "45", "./images/label.png" )
+                li
+                  +product("./images/product-1.png", "Product 1", "45", "./images/label.png" )
+                li
+                  +product("./images/product-2.png", "Product 2", "45", "./images/label.png" )
+                li
+                  +product("./images/product-3.png", "Product 3", "45", "./images/label.png" )
+                li
+                  +product("./images/product-1.png", "Product 1", "45", "./images/label.png" )
+                li
+                  +product("./images/product-2.png", "Product 2", "45", "./images/label.png" )
+                li
+                  +product("./images/product-3.png", "Product 3", "45", "./images/label.png" )
+                li
+                  +product("./images/product-1.png", "Product 1", "45", "./images/label.png" )
+              a.jcarousel-control-prev(href="#" data-jcarouselcontrol="true")
+              a.jcarousel-control-next(href="#" data-jcarouselcontrol="true")
+        div#tabs-2
+          p sufcbyuvbulabiwnc
+        div#features
+          p sufcbyuvbulabiwncueg
+        div#latest
+          p sufcbyuvbulabiwncuega
+    section.full-width.clearence-section
+      div.main-width
+        fieldset
+          legend(align="center")
+            img(src="./images/clearence.png")
+    section.full-width.clearence-products
+      div.main-width
+        div.product-sale
+          +product("./images/product-1.png", "Product 1", "45", "./images/label.png")
+        div.product-sale
+          +product("./images/product-2.png", "Product 2", "45", "./images/label.png")
+        div.product-sale
+          +product("./images/product-3.png", "Product 3", "45", "./images/label.png")
+        div.product-sale
+          +product("./images/product-1.png", "Product 1", "45", "./images/label.png" )
+        div.clearfix
+    section.full-width.favourite-brands
+      fieldset
+        legend(align="center") favourite brands
+      div.main-width
+        div.brand-icons
+          div.brand-icon-images
+            img(src="./images/addict.png")
+          div.brand-icon-images
+            img(src="./images/abandon.png")
+          div.brand-icon-images
+            img(src="./images/addidas.png")
+          div.brand-icon-images
+            img(src="./images/boy-london.png")
+          div.brand-icon-images
+            img(src="./images/converse.png")
+          div.brand-icon-images
+            img(src="./images/calvin-klein.png")
+          div.brand-icon-images
+            img(src="./images/edwin.png")
+          div.brand-icon-images
+            img(src="./images/grenson.png")
+    section.full-width.section-about
+      div.main-width
+        h4 About LookShop
+        p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+    section.full-width.accept-payment
+      div.main-width
+        span We accept
+        img(src="./images/cards.png")
+    section.full-width.information-section
+      div.main-width
+        div.customer-service.information-div
+          span Customer Service
+          ul
+            li
+              a(href="#") Contact
+            li
+              a(href="#") FAQ
+            li
+              a(href="#") Terms of payment
+            li
+              a(href="#") Terms of sale
+            li
+              a(href="#") Delivery terms and conditions
+            li
+              a(href="#") Returns and Refunds
+        div.customer-service.information-div
+          span Information
+          ul
+            li
+              a(href="#") Affiliate
+            li
+              a(href="#") Cookies
+            li
+              a(href="#") How to Shop
+            li
+              a(href="#") About Nelly
+            li
+              a(href="#") Investor relations
+        div.campaigns.information-div
+          span Campaigns
+          ul
+            li
+              a(href="#") Evening dresses
+            li
+              a(href="#") Makeup
+            li
+              a(href="#") Fashion forward
+            li
+              a(href="#") Training clothes
+            li
+              a(href="#") Special Occasion Dresses
+        div.stores.information-div
+          span Stores
+          ul
+            li
+              a(href="#") Paris
+            li
+              a(href="#") New York
+            li
+              a(href="#") London
+            li
+              a(href="#") Madrid
+            li
+              a(href="#") Tokio
+        div.social.information-div
+          span Social
+          ul
+            li
+              a(href="#")
+                i.fa.fa-twitter
+            li
+              a(href="#")
+                i.fa.fa-pinterest
+            li
+              a(href="#")
+                i.fa.fa-facebook
+          div.clearfix
+          ul
+            li
+              a(href="#")
+                i.fa.fa-google-plus
+            li
+              a(href="#")
+                i.fa.fa-tumblr
+            li
+              a(href="#")
+                i.fa.fa-vimeo
+        div.image-secured.information-div
+          img(src="./images/secured.png")
+        div.clearfix
+  footer
+    div.full-width
+      div.main-width
+        div.footer-left
+          ul
+            li
+             a(href='') Privacy & Cookies
+            li
+              a(href='') Terms & Conditions
+            li
+              a(href='') Accessibility
+            li
+              a(href='') Store Directory
+            li
+              a(href='') About Us
+        div.footer-right
+          span © LookShop.com <br /> All Rights Reserved
