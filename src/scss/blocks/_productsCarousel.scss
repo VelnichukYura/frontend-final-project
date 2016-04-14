@@ -1,0 +1,62 @@
+.product-carousel{
+  .main-width{
+    height: 47px;
+    ul{
+      list-style: none;
+      li{
+        float: left;
+        display: block;
+        height: 47px;
+        padding: 0 20px 0 20px;
+        line-height: 47px;
+        text-align: center;
+        a{
+          color: #555555;
+          font-size: 15px;
+          font-weight: 400;
+          letter-spacing: -0.15px;
+          text-decoration: none;
+          display: block;
+          text-transform: uppercase;
+        }
+        &.ui-state-active{
+          background: #fd926d;
+          a{
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: -0.15px;
+          }
+        }
+      }
+    }
+  }
+}
+//CAROUSEL CONTROLS
+.jcarousel-control-prev{
+  position: absolute;
+  top: -47px;
+  right: 223px;
+  width: 47px;
+  height: 47px;
+  text-align: center;
+  background: #FA916C;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  color: white;
+  &:hover{
+    background: #EFEFEF;
+  }
+  &:hover span{
+    display: block;
+  }
+}
+.jcarousel-control-next{
+  @extend .jcarousel-control-prev;
+  right: 176px;
+  &:hover span{
+    display: block;
+  }
+}

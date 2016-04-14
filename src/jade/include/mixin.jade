@@ -21,31 +21,89 @@ mixin sliderHome
         div.jcarousel
             ul
                 li
-                    a(href="#")
-                        img(src="/images/slide2.png" alt="img2")
-                        span.active-shop
+                    div.product-wraper
+                        div.product
+                            div.link
+                                a(href="#") shop it
+                            div.image
+                                div.label: img(src="images/label.png")
+                                img(src="/images/slide-img1.png")
+                            div.title
+                                h3: a(href="#") MIMOSA LACE DRESS
+                            div.price: span $76.95
+                            div.cart
+                                button Add to cart
+                                    i.fa.fa-plus
                 li
-                    a(href="#")
-                        img(src="/images/slide3.png" alt="img2")
-                        span.active-shop
+                    div.product-wraper
+                        div.product
+                            div.link
+                                a(href="#") shop it
+                            div.image
+                                img(src="/images/slide-img2.png")
+                            div.title
+                                h3: a(href="#") FEEL TANKS
+                            div.price: span $59.95
+                            div.cart
+                                button Add to cart
+                                    i.fa.fa-plus
                 li
-                    a(href="#")
-                        img(src="/images/slide2.png" alt="img2")
-                        span.active-shop
+                    div.product-wraper
+                        div.product
+                            div.link
+                                a(href="#") shop it
+                            div.image
+                                div.label: img(src="images/label.png")
+                                img(src="/images/slide-img3.png")
+                            div.title
+                                h3: a(href="#") HOT SHORTS
+                            div.price: span $35.95
+                            div.cart
+                                button Add to cart
                 li
-                    a(href="#")
-                        img(src="/images/slide5.png" alt="img2")
-                        span.active-shop
+                    div.product-wraper
+                        div.product
+                            div.link
+                                a(href="#") shop it
+                            div.image
+                                img(src="/images/slide-img2.png")
+                            div.title
+                                h3: a(href="#") PETROL SWEATER
+                            div.price: span $21.55
+                            div.cart
+                                button Add to cart
+                                    i.fa.fa-plus
                 li
-                    a(href="#")
-                        img(src="/images/slide3.png" alt="img2")
-                        span.active-shop
+                    div.product-wraper
+                        div.product
+                            div.link
+                                a(href="#") shop it
+                            div.image
+                                div.label: img(src="images/label.png")
+                                img(src="/images/slide-img1.png")
+                            div.title
+                                h3: a(href="#") MIMOSA LACE DRESS
+                            div.price: span $76.95
+                            div.cart
+                                button Add to cart
+                                    i.fa.fa-plus
                 li
-                    a(href="#")
-                        img(src="/images/slide5.png")
-                        span.active-shop
+                    div.product-wraper
+                        div.product
+                            div.link
+                                a(href="#") shop it
+                            div.image
+                                img(src="/images/slide-img3.png")
+                            div.title
+                                h3: a(href="#") MIMOSA LACE DRESS
+                            div.price: span $76.95
+                            div.cart
+                                button Add to cart
+                                    i.fa.fa-plus
+
         a.jcarousel-control-prev.active(href="#") &lsaquo;
         a.jcarousel-control-next(href="#") &rsaquo;
+
 //DISCOUNT
 mixin disccountProducts
     div.top-discount
@@ -63,6 +121,9 @@ mixin disccountProducts
         div
             a(href="#")
                 img(src="images/discount-img4.png")
+
+
+
 //FOOTER TOP
 mixin footerTop
     div.footer-top
@@ -97,13 +158,13 @@ mixin footerTop
             a(href="#") Tokio
         div.social-footer
             h4 Social
-            a.fa.fa-twitter(href="#")
-            a.fa.fa-pinterest(href="#")
-            a.fa.fa-facebook(href="#")
+            a.fa.fa-twitter(href="#" target="_blank")
+            a.fa.fa-pinterest(href="#" target="_blank")
+            a.fa.fa-facebook(href="#" target="_blank")
             br
-            a.fa.fa-google-plus(href="#")
-            a.fa.fa-tumblr(href="#")
-            a.fa.fa-vimeo(href="#")
+            a.fa.fa-google-plus(href="#" target="_blank")
+            a.fa.fa-tumblr(href="#" target="_blank")
+            a.fa.fa-vimeo(href="#" target="_blank")
         div.secured
             img(src="/images/secured.png")
 //FOOTER BOTTOM

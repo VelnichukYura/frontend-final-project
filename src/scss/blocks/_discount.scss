@@ -10,9 +10,18 @@
     top: 20px;
 
     div{
+
       width: 230px;
       display: inline-block;
-      padding-right: 15px;
+      margin-left: 20px;
+      &:first-child{
+        float: left;
+        margin: 0;
+      }
+      &:last-child{
+        float: right;
+        margin: 0;
+      }
     }
   }
 }
