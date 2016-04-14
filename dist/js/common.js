@@ -44,7 +44,7 @@ $(function() {
 
     $('.jcarousel-pagination')
 
-        // Триггер класса active
+    // Триггер класса active
 
         .on('jcarouselpagination:active', 'a', function() {
             $(this).addClass('active');
@@ -118,24 +118,18 @@ function productsCarousel(id) {
     var jcarousel = $('#' + id);
 
     jcarousel
-        .on('jcarousel:reload jcarousel:create', function () {
-            var carousel = $(this),
-                width = carousel.innerWidth();
-
-            if (width >= 600) {
-                width = width / 3;
-            } else if (width >= 350) {
-                width = width / 2;
-            }
-
-            carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-        })
         .jcarousel({
             wrap: 'circular'
         });
 
     jcarousel.jcarouselAutoscroll({
-        interval: 2000
+        interval: 4000
+    });
+
+    jcarousel.hover(function() {
+        jcarousel.jcarouselAutoscroll('stop');
+    }, function() {
+        jcarousel.jcarouselAutoscroll('start');
     });
 
     $('#-prev-' + id)

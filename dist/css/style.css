@@ -9,7 +9,7 @@ main .full-width {
   width: 100%; }
 
 main .main-width {
-  width: 970px;
+  width: 980px;
   margin: 0 auto; }
 
 .account-section {
@@ -349,15 +349,10 @@ header {
   text-align: center; }
 
 .products-jcarousel-wrapper {
-  margin: 20px auto;
+  margin: 0px auto;
   position: relative;
-  border: 10px solid #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 2px #999;
-  -moz-box-shadow: 0 0 2px #999;
-  box-shadow: 0 0 2px #999; }
+  background: #fd926d;
+  padding: 20px 0 20px 0; }
 
 /** Carousel **/
 .products-jcarousel {
@@ -373,9 +368,8 @@ header {
   padding: 0; }
 
 .products-jcarousel li {
-  width: 200px;
+  width: 240px;
   float: left;
-  border: 1px solid #fff;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -411,3 +405,257 @@ header {
 
 .products-jcarousel-control-next {
   right: 15px; }
+
+.product-wrapper {
+  width: 220px;
+  height: 395px;
+  padding: 10px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+  .product-wrapper .product {
+    position: relative;
+    background: #f7f7f7; }
+    .product-wrapper .product .link {
+      opacity: 0;
+      position: absolute;
+      width: 134px;
+      height: 134px;
+      border-radius: 134px;
+      left: 50%;
+      top: 100px;
+      margin-left: -67px;
+      background-color: #3d3d3d;
+      background-image: url("../images/link-bg.png");
+      background-repeat: no-repeat;
+      background-position: center 40%;
+      z-index: 1000;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+      .product-wrapper .product .link a {
+        display: block;
+        width: 100%;
+        border-radius: 134px;
+        height: 100%;
+        font-family: Arial;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.12px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 165px; }
+    .product-wrapper .product .image {
+      position: relative;
+      height: 294px;
+      overflow: hidden; }
+      .product-wrapper .product .image img {
+        width: 100%;
+        height: 294px; }
+      .product-wrapper .product .image .label {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 0;
+        top: 0; }
+    .product-wrapper .product .title h3 a {
+      font-family: Arial;
+      color: #373737;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.12px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 8px 0 8px 0;
+      text-decoration: none;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+    .product-wrapper .product .price {
+      font-family: Arial;
+      color: #373737;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: -0.22px;
+      text-align: center; }
+    .product-wrapper .product .cart {
+      text-align: center; }
+      .product-wrapper .product .cart button {
+        width: 120px;
+        color: white;
+        height: 27px;
+        background-color: #fd926d;
+        cursor: pointer;
+        border: none;
+        border-bottom: 2px solid #dd6b44;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 27px;
+        margin: 10px 0 10px 0; }
+        .product-wrapper .product .cart button i {
+          margin-left: 5px; }
+  .product-wrapper:hover {
+    padding: 0;
+    width: 240px;
+    height: 415px; }
+    .product-wrapper:hover .product {
+      height: 100%; }
+      .product-wrapper:hover .product .link {
+        opacity: 1; }
+      .product-wrapper:hover .product .title h3 a {
+        font-size: 14px; }
+
+.home-label {
+  margin: 20px 0 20px 0;
+  display: block;
+  height: 160px; }
+  .home-label fieldset {
+    border: none;
+    border-top: 1px solid #B2B2B2; }
+    .home-label fieldset legend {
+      padding: 0 20px 0 20px; }
+
+.sale-block {
+  height: 409px;
+  margin: 0 auto 50px; }
+  .sale-block ul li {
+    list-style-type: none; }
+
+.discont {
+  background: #f7f7f7;
+  float: left;
+  margin: 10px; }
+  .discont .image {
+    position: relative;
+    height: 294px;
+    width: 220px;
+    overflow: hidden; }
+    .discont .image .label img {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 0;
+      top: 0; }
+  .discont .title h3 {
+    text-align: center; }
+    .discont .title h3 a {
+      font-family: Arial;
+      color: #373737;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.12px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 8px 0 8px 0;
+      text-decoration: none;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+  .discont .price {
+    font-family: Arial;
+    color: #373737;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.22px;
+    text-align: center; }
+  .discont .cart {
+    text-align: center; }
+    .discont .cart button {
+      width: 120px;
+      color: white;
+      height: 27px;
+      background-color: #fd926d;
+      cursor: pointer;
+      border: none;
+      border-bottom: 2px solid #dd6b44;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 27px;
+      margin: 10px 0 10px 0; }
+      .discont .cart button i {
+        margin-left: 5px; }
+
+.FB-label {
+  margin-bottom: 50px;
+  text-transform: uppercase; }
+  .FB-label .brands img {
+    padding: 10px 0 20px; }
+  .FB-label fieldset {
+    border: none;
+    border-top: 1px solid #B2B2B2; }
+    .FB-label fieldset legend {
+      padding: 0 20px 0 20px; }
+
+.look-shop {
+  margin-bottom: 35px; }
+  .look-shop .look-shop-title {
+    font-family: Arial;
+    color: #414141;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+    text-align: center;
+    padding: 0 0 20px 0; }
+  .look-shop .look-shop-text {
+    font-family: Arial;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center; }
+
+.payment-system {
+  background-color: #f7f7f7;
+  height: 58px; }
+  .payment-system .payment-images {
+    line-height: 58px;
+    display: block;
+    font-family: Arial;
+    color: #414141;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.12px;
+    text-align: center; }
+    .payment-system .payment-images img {
+      vertical-align: middle;
+      padding-left: 15px; }
+
+.footer {
+  height: 200px;
+  vertical-align: middle;
+  background-color: #ededed; }
+  .footer .fotters-ul {
+    font-family: Arial;
+    color: #544e4d;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.16px; }
+    .footer .fotters-ul .customer-service, .footer .fotters-ul .information, .footer .fotters-ul .campaigns, .footer .fotters-ul .stores, .footer .fotters-ul .social {
+      display: inline-block;
+      padding-left: 10px; }
+    .footer .fotters-ul ul li {
+      list-style-type: none; }
+      .footer .fotters-ul ul li a {
+        text-decoration: none;
+        font-family: Arial;
+        color: #544e4d;
+        font-size: 12px;
+        font-weight: 400; }
+
+.footer2 {
+  background-color: #000000;
+  height: 74px; }
+  .footer2 .about_us span a {
+    font-family: Arial;
+    color: #8d8d8d;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 74px;
+    padding: 0 4px 0; }

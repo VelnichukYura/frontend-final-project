@@ -1,0 +1,18 @@
+.payment-system {
+  background-color:  #f7f7f7;
+  height: 58px;
+  .payment-images {
+    line-height: 58px;
+    display: block;
+    font-family: Arial;
+    color:  #414141;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.12px;
+    text-align: center;
+    img {
+      vertical-align: middle;
+      padding-left: 15px;
+    }
+  }
+}

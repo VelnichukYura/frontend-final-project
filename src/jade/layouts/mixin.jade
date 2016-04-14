@@ -1,21 +1,53 @@
 //- Declaration
 mixin product(image, title, price, label)
-    div.product
-        div.image
-            if(label)
-                span label
-            img(src=image)
-        div.title
-            h3= title
-        div.price
-            span= price
+    div.product-wrapper
+        div.product
+            div.link
+                a(href='#') shop it
+            div.image
+                if(label)
+                    div.label
+                        img(src='images/label.png')
+                img(src=image)
+            div.title
+                h3
+                    a(href='')= title
+            div.price
+                | $
+                span= price
+            div.cart
+                button
+                    | Add to cart
+                    i.fa.fa-plus
 
 mixin slide(image, smallImage)
     div.slide
         if(smallImage)
             div.main-width
                 a(href='#')
-                    img(src='images/slide-1-1.png')
+                    img(src=smallImage)
         div.image
             a(href='#')
-                img(src='images/slide-1.png')
+                img(src=image)
+
+mixin product-sales(image, title, price, label)
+        div.discont
+            div.image
+                if(label)
+                    div.label
+                        img(src='images/label.png')
+                img(src=image)
+            div.title
+                h3
+                    a(href='')= title
+            div.price
+                | $
+                span= price
+            div.cart
+                button
+                    | Add to cart
+                    i.fa.fa-plus
+
+mixin footer-list(lists)
+        div.lists
+            a(href='#')= lists

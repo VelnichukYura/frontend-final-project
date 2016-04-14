@@ -1,5 +1,5 @@
-extends ./layouts/main.jade
-include ./layouts/mixin
+extends layouts/main.jade
+include layouts/mixin
 block content
     main
         section.full-width.account-section
@@ -121,13 +121,29 @@ block content
                         div.products-jcarousel#products-hot
                             ul
                                 li
-                                    +product('images/product-1.png', 'Product 1', '55', true)
+                                    +product('images/product-1.png', 'Product 1', '55', 'images/label.png')
                                 li
                                     +product('images/product-2.png', 'Product 2', '55', false)
                                 li
-                                    +product('images/product-3.png', 'Product 3', '55', true)
+                                    +product('images/product-3.png', 'Product 3', '55', 'images/label.png')
                                 li
-                                    +product('images/product-4.png', 'Product 4', '55', true)
+                                    +product('images/product-1.png', 'Product 4', '55', 'images/label.png')
+                                li
+                                    +product('images/product-1.png', 'Product 1', '55', 'images/label.png')
+                                li
+                                    +product('images/product-2.png', 'Product 2', '55', false)
+                                li
+                                    +product('images/product-3.png', 'Product 3', '55', 'images/label.png')
+                                li
+                                    +product('images/product-1.png', 'Product 4', '55', 'images/label.png')
+                                li
+                                    +product('images/product-1.png', 'Product 1', '55', 'images/label.png')
+                                li
+                                    +product('images/product-2.png', 'Product 2', '55', false)
+                                li
+                                    +product('images/product-3.png', 'Product 3', '55', 'images/label.png')
+                                li
+                                    +product('images/product-1.png', 'Product 4', '55', 'images/label.png')
                 div#tabs-designers
                     div.products-jcarousel-wrapper
                         div.products-jcarousel#products-designers
@@ -164,6 +180,135 @@ block content
                                     +product('images/product-3.png', 'Product 3', '55', true)
                                 li
                                     +product('images/product-4.png', 'Product 4', '55', true)
+
+        section.full-width.home-label
+            div.main-width
+                fieldset
+                    legend(align='center')
+                        img(src='images/home-label.png')
+
+        div.clearfix
+
+        section.full-width.sale-block
+            div.main-width
+                ul
+                    li
+                        +product-sales('images/sale1.png', 'Product 1', '55', 'images/label.png')
+                    li
+                        +product-sales('images/sale2.png', 'Product 2', '55', false)
+                    li
+                        +product-sales('images/sale1.png', 'Product 3', '55', 'images/label.png')
+                    li
+                        +product-sales('images/sale2.png', 'Product 4', '55', 'images/label.png')
+
+        div.clearfix
+
+        section.full-width.FB-label
+            fieldset
+                legend(align='center')
+                    img(src='images/FB.png')
+            div.main-width.brands
+                img(src='images/FBimgs.png')
+            fieldset
+
+        div.clearfix
+
+        section.full-width.look-shop
+            div.main-width
+                div.look-shop-title About LookShop
+                div.look-shop-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+
+        div.clearfix
+
+        section.full-width.payment-system
+            div.main-width
+               div.payment-images We accept
+                   img(src='images/PmImgs.png')
+
+        div.clearfix
+
+        section.full-width.footer
+            div.main-width.fotters-ul
+                div.customer-service Customer Service
+                    ul
+                        li
+                            +footer-list('Contact')
+                        li
+                            +footer-list('FAQ')
+                        li
+                            +footer-list('Terms of payment')
+                        li
+                            +footer-list('Terms of sale')
+                        li
+                            +footer-list('Delivery terms and conditions')
+                        li
+                            +footer-list('Returns and Refunds')
+                div.information Information
+                    ul
+                        li
+                            +footer-list('Affiliate')
+                        li
+                            +footer-list('Cookies')
+                        li
+                            +footer-list('How to Shop')
+                        li
+                            +footer-list('About Nelly')
+                        li
+                            +footer-list('Investor relations')
+
+                div.campaigns Campaigns
+                    ul
+                        li
+                            +footer-list('Affiliate')
+                        li
+                            +footer-list('Cookies')
+                        li
+                            +footer-list('How to Shop')
+                        li
+                            +footer-list('About Nelly')
+                        li
+                            +footer-list('Investor relations')
+                div.stores Stores
+                    ul
+                        li
+                            +footer-list('Affiliate')
+                        li
+                            +footer-list('Cookies')
+                        li
+                            +footer-list('How to Shop')
+                        li
+                            +footer-list('About Nelly')
+                        li
+                            +footer-list('Investor relations')
+                div.social Social
+                    a(href='#', target='_blank')
+                        i.fa.fa-facebook
+                    a(href='#', target='_blank')
+                        i.fa.fa-twitter
+                    a(href='#', target='_blank')
+                        i.fa.fa-pinterest
+
+        div.clearfix
+
+        section.full-width.footer2
+            div.main-width
+                div.about_us
+                    span
+                        a(href='#') Privacy & Cookies &nbsp|
+                        a(href='#') Terms & Conditions  &nbsp |
+                        a(href='#') Accessibility &nbsp  |
+                        a(href='#') Store Directory  &nbsp |
+                        a(href='#') About Us
+                div.rights
+                    span &copy LookShop.com
+                    span All Rights Reserved
+
+
+
+
+
+
+
 
 
 

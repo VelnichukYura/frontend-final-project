@@ -1,0 +1,29 @@
+.footer {
+  height: 200px;
+  vertical-align: middle;
+  background-color:  #ededed;
+  .fotters-ul {
+    font-family: Arial;
+    color:  #544e4d;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.16px;
+    .customer-service,.information,.campaigns,.stores,.social {
+      display: inline-block;
+      padding-left: 10px;
+    }
+     ul {
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            font-family: Arial;
+            color:  #544e4d;
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+      }
+
+  }
+}
