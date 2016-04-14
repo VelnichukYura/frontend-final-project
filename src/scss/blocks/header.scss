@@ -1,3 +1,5 @@
+@import "../init/definition";
+
 header {
   height: 100px;
   .logo {
@@ -20,7 +22,7 @@ header {
       list-style: none;
       li {
         float: left;
-        &+li {
+        & + li {
           margin-left: 30px;
         }
         a {
@@ -39,17 +41,17 @@ header {
     border: 1px solid #d6d6d6;
     width: 214px;
     position: relative;
-    top:16px;
-    &>div {
+    top: 16px;
+    & > div {
       height: 33px;
       line-height: 33px;
-      &+div {
+      & + div {
         border-top: 1px solid #d6d6d6;
       }
     }
     .cart-header {
       font-family: Arial;
-      color:  #949393;
+      color: #949393;
       font-size: 12px;
       font-weight: 400;
       letter-spacing: -0.06px;
@@ -58,7 +60,7 @@ header {
       span {
         float: right;
         position: relative;
-        top:14px;
+        top: 14px;
         right: 12px;
       }
     }
@@ -74,5 +76,11 @@ header {
         letter-spacing: -0.055px;
       }
     }
+  }
+}
+
+@include breakpoint(sm) {
+  header {
+
   }
 }
