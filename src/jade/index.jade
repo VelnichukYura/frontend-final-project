@@ -1,4 +1,5 @@
 extends ./layouts/main.jade
+include ./layouts/mixin
 block content
   main
     section.full-width.account-section
@@ -43,24 +44,21 @@ block content
           div.cart-total
             span 0 items | $ 0
       div.clearfix
-      section.slider
-        div.main-width
-          div.jcarousel
-            ul
-              li
-                a(href='#')
-                  img(src='images/slider-1.png', width='1000', height='100%', alt='')
-              li
-                a(href='#')
-                  img(src='images/slider-1.png', width='1000', height='100%', alt='')
-              li
-                a(href='#')
-                  img(src='images/slider-1.png', width='1000', height='100%', alt='')
-            a(href='#', class='jcarousel-control-prev')
-              img(class='arrow-left', src='images/arrow-left.svg', width='10', height='100%', alt='')
-            a(href='#', class='jcarousel-control-next')
-              img(class='arrow-right', src='images/arrow-right.svg', width='10', height='100%', alt='')
-          p.jcarousel-pagination
+      section.full-width.home-carousel
+        div.jcarousel-full
+          ul
+            li
+              +slide('/images/slide-1.png', '/images/slide-1-1.png')
+            li
+              +slide('/images/slide-1.png')
+            li
+              +slide('/images/slide-1.png')
+        a.jcarousel-control-prev(href='#' data-jcarouselcontrol='true')
+        a.jcarousel-control-next(href='#' data-jcarouselcontrol='true')
+        p.jcarousel-pagination(data-jcarouselcontrol='true')
+          a(href='#')
+          a(href='#')
+          a(href='#')
       div.clearfix
       section.middle-line.full-width
         div.main-width
@@ -91,16 +89,76 @@ block content
             a(href="#")
               div.bottom-left-pic
                 img(src='images/bottom-left-pic.jpg', alt='')
-             a(href="#")
+            a(href="#")
               div.bottom-right-pic
                 img(src='images/bottom-right-pic.jpg', alt='')
       section.full-width.products-blocks
-        div.main-width
-          div#tabs
-            ul
-              li
-                a(href='#tabs-1') what's hot?
-              li
-                a(href='#tabs-1') what's hot?
-              li
-                a(href='#tabs-1') what's hot?
+        div#tabs_hot
+          div.products-jcarousel-wrapper
+            div.products-jcarousel#products-hot
+          ul
+            li
+              +product('/images/product-1.png', 'Product 1', '55', '/images/label.png')
+            li
+              +product('/images/product-2.png', 'Product 2', '55', false)
+            li
+              +product('/images/product-3.png', 'Product 3', '55', '/images/label.png')
+            li
+              +product('/images/product-4.png', 'Product 4', '55', '/images/label.png')
+            li
+              +product('/images/product-1.png', 'Product 1', '55', '/images/label.png')
+            li
+              +product('/images/product-2.png', 'Product 2', '55', false)
+            li
+              +product('/images/product-3.png', 'Product 3', '55', '/images/label.png')
+            li
+              +product('/images/product-4.png', 'Product 4', '55', '/images/label.png')
+            li
+              +product('/images/product-1.png', 'Product 1', '55', '/images/label.png')
+            li
+              +product('/images/product-2.png', 'Product 2', '55', false)
+            li
+              +product('/images/product-3.png', 'Product 3', '55', '/images/label.png')
+            li
+              +product('/images/product-4.png', 'Product 4', '55', '/images/label.png')
+        div#tabs-designers
+          div.products-jcarousel-wrapper
+            div.products-jcarousel#products-designers
+              ul
+                li
+                  +product('/images/product-1.png', 'Product 1', '55', true)
+                li
+                  +product('/images/product-2.png', 'Product 2', '55', false)
+                li
+                  +product('/images/product-3.png', 'Product 3', '55', true)
+                li
+                  +product('/images/product-4.png', 'Product 4', '55', true)
+        div#tabs-featured
+          div.products-jcarousel-wrapper
+            div.products-jcarousel#products-featured
+              ul
+                li
+                  +product('/images/product-1.png', 'Product 1', '55', true)
+                li
+                  +product('/images/product-2.png', 'Product 2', '55', false)
+                li
+                  +product('/images/product-3.png', 'Product 3', '55', true)
+                li
+                  +product('/images/product-4.png', 'Product 4', '55', true)
+        div#tabs-latest
+          div.products-jcarousel-wrapper
+            div.products-jcarousel#products-latest
+              ul
+                li
+                  +product('/images/product-1.png', 'Product 1', '55', true)
+                li
+                  +product('/images/product-2.png', 'Product 2', '55', false)
+                li
+                  +product('/images/product-3.png', 'Product 3', '55', true)
+                li
+                  +product('/images/product-4.png', 'Product 4', '55', true)
+      section.full-width.home-label
+      div.main-width
+        fieldset
+          legend(align='center')
+            img(src='images/home-label.png')
