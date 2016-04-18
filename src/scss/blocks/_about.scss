@@ -1,0 +1,22 @@
+.about {
+  fieldset {
+    border: none;
+    border-top: 1px solid #B2B2B2;
+    margin-bottom: 20px;
+    legend {
+      padding: 0 20px 0 20px;
+      span {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 30px;
+  }
+}

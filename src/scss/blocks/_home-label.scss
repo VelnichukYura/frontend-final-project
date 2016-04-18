@@ -7,4 +7,83 @@
       padding: 0 20px 0 20px;
     }
   }
+  .main-width {
+    margin: 0 auto;
+    .cards-wrapper {
+      float: left;
+      padding: 15px 15px;
+      .card {
+        width: 220px;
+        height: 400px;
+        position: relative;
+        //background-color: #f7f7f7;
+        .card-pic {
+          position: absolute;
+          z-index: 100;
+        }
+        .card-label {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          z-index: 200;
+        }
+        .card-info-block {
+          position: absolute;
+          height: 105px;
+          width: 220px;
+          background-color: #f7f7f7;
+          bottom: 0;
+          z-index: 300;
+          .card-name {
+            width: 220px;
+            text-align: center;
+            h4 {
+              font-family: "Open Sans", sans-serif;
+              font-weight: 400;
+              font-size: 15px;
+              text-transform: uppercase;
+              margin-top: 7px;
+            }
+          }
+        }
+        .card-price {
+          width: 220px;
+          text-align: center;
+          span {
+            font-family: "Open Sans", sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+        }
+        div.info-button {
+          text-align: center;
+          cursor: pointer;
+          button {
+            text-align: center;
+            background-color: #fd926d;
+            width: 100px;
+            height: 30px;
+            border: none;
+            font-family: "Open Sans", sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 5px 5px 5px 10px;
+            color: white;
+            cursor: pointer;
+            margin: 0 auto;
+          }
+          i {
+            background-color: #fd926d;
+            color: white;
+            padding: 0 10px 0px 5px;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
 }

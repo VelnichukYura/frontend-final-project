@@ -1,0 +1,30 @@
+.brand-logoset {
+  margin: 20px 0 20px 0;
+  fieldset {
+    border: none;
+    border-top: 1px solid #B2B2B2;
+    legend {
+      padding: 0 20px 0 20px;
+      span {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .logoset {
+    ul {
+      list-style: none;
+      text-align: center;
+      margin: 20px 0 20px 0;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        & + li {
+          padding-left: 45px;
+        }
+      }
+    }
+  }
+}

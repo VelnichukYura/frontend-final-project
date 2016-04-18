@@ -1,10 +1,11 @@
+//- Declaration
 mixin product(image, title, price, label)
   div.product-wrapper
     div.product
       div.link
         a(href='#') shop it
       div.image
-        if label
+        if(label)
           div.label
             img(src=label)
         img(src=image)
