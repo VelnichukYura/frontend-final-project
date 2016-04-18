@@ -27,6 +27,8 @@ header {
           font-weight: 400;
           letter-spacing: -0.08px;
           text-decoration: none; }
+  header .mobile-menu {
+    display: none; }
   header .cart {
     float: right;
     border: 1px solid #d6d6d6;
@@ -61,3 +63,29 @@ header {
         font-size: 11px;
         font-weight: 400;
         letter-spacing: -0.055px; }
+
+@media (max-width: 320px) {
+  header {
+    width: 100%; }
+    header .logo {
+      width: 100%;
+      display: block;
+      text-align: center; }
+      header .logo a {
+        width: 100%; }
+    header nav.main-menu {
+      display: none; }
+    header .mobile-menu {
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      background: #fd926d;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: -0.15px;
+      text-align: left;
+      text-transform: uppercase;
+      text-indent: 20px;
+      cursor: pointer; } }

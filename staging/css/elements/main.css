@@ -10,3 +10,8 @@ main .triangle-down {
   background: url("/images/triangle-down.png") no-repeat center center;
   width: 7px;
   height: 4px; }
+
+@media (max-width: 320px) {
+  main .main-width {
+    width: 320px;
+    margin: 0 auto; } }

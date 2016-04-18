@@ -1,3 +1,5 @@
+@import "../init/definition";
+
 main {
   .full-width {
     width: 100%;
@@ -11,5 +13,14 @@ main {
     background: url("/images/triangle-down.png") no-repeat center center;
     width: 7px;
     height: 4px;
+  }
+}
+
+@include breakpoint(mobile) {
+  main {
+    .main-width {
+      width: 320px;
+      margin: 0 auto;
+    }
   }
 }

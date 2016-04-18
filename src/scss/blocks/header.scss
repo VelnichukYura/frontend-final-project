@@ -36,6 +36,9 @@ header {
       }
     }
   }
+  .mobile-menu {
+    display: none;
+  }
   .cart {
     float: right;
     border: 1px solid #d6d6d6;
@@ -79,8 +82,34 @@ header {
   }
 }
 
-@include breakpoint(sm) {
+@include breakpoint(mobile) {
   header {
-
+    width: 100%;
+    .logo {
+      width: 100%;
+      display: block;
+      text-align: center;
+      a {
+        width: 100%;
+      }
+    }
+    nav.main-menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      background: #fd926d;
+      font-family: Arial;
+      color:  #ffffff;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: -0.15px;
+      text-align: left;
+      text-transform: uppercase;
+      text-indent: 20px;
+      cursor: pointer;
+    }
   }
 }

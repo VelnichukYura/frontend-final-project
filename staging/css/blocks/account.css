@@ -39,7 +39,7 @@
       float: right;
       height: 30px;
       border-left: 1px solid #444444;
-      background: url("../images/user.png") no-repeat;
+      background: url("/images/user.png") no-repeat;
       background-position: 15px center;
       width: 100px;
       padding-left: 40px;
@@ -66,7 +66,7 @@
         top: 0;
         right: 0;
         border: none;
-        background: url("../images/search.png") no-repeat;
+        background: url("/images/search.png") no-repeat;
         background-position: 50% center;
         transition: all 0.4s ease-in-out;
         cursor: pointer; }
@@ -76,3 +76,46 @@
           border-bottom: 1px solid #444444;
           cursor: text;
           z-index: 500; }
+
+@media (max-width: 320px) {
+  .account-section {
+    height: 96px; }
+    .account-section .account-left {
+      float: none;
+      width: 100%;
+      height: 48px;
+      background: #fafafa;
+      text-align: center;
+      color: #838383;
+      font-size: 15px;
+      line-height: 48px; }
+      .account-section .account-left span {
+        font-size: 15px; }
+    .account-section .account-right {
+      float: none;
+      width: 100%;
+      height: 48px;
+      line-height: 48px; }
+      .account-section .account-right .search {
+        width: 50px;
+        border-right: none;
+        height: 48px;
+        line-height: 48px; }
+        .account-section .account-right .search input {
+          height: 48px;
+          width: 50px; }
+          .account-section .account-right .search input:focus {
+            width: 240px; }
+      .account-section .account-right .account-page-link {
+        width: 188px;
+        height: 48px;
+        line-height: 48px;
+        padding: 0;
+        background-position: 45px center;
+        text-indent: 65px;
+        font-size: 15px; }
+      .account-section .account-right .currency-switcher {
+        width: 80px;
+        border-left: none;
+        height: 48px;
+        line-height: 48px; } }

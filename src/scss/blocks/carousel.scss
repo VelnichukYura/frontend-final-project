@@ -1,3 +1,4 @@
+@import "../init/definition";
 .home-carousel {
   height: 510px;
   .jcarousel-full {
@@ -113,4 +114,10 @@
     background: #fd926d;
   }
 
+}
+
+@include breakpoint(mobile) {
+  .home-carousel {
+    display: none;
+  }
 }
